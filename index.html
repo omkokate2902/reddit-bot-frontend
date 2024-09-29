@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charSet="utf-8" />
+    <link rel="preload" as="font" href="/_next/static/media/a34f9d1faa5f3315-s.p.woff2" crossorigin=""
+        type="font/woff2" />
+    <link rel="stylesheet" href="/_next/static/css/95a342299e7d323f.css" data-precedence="next" />
+    <link rel="preload" as="script" href="https://umami.diffusion.studio/script.js" />
+    <meta name="next-size-adjust" />
+    <title>Fusion Lab - The generative AI Text-To-Video Editor</title>
+    <link rel="stylesheet" href="_next/static/css/slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <script src="_next/static/js/slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="_next/static/js/fqa.js"></script>
+    <meta name="description"
+        content="Fusion Lab: Unlock the Power of AI with our Cutting-Edge Text-To-Video Editor! Create Stunning Videos from Text Automatically. No Video Editing Skills Required. Try Our Generative AI Editor Now for Professional-Quality Videos!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" noModule=""></script>
+</head>
+
+<body class="min-h-screen bg-background font-sans antialiased __variable_cc7fef">
+    <div class="flex flex-col min-h-screen overflow-hidden">
+        <header class="w-full safearea absolute inset-x-0 top-6 hidden md:flex justify-center z-50">
+            <div class="w-full flex justify-between items-center flex-row max-w-6xl"><a
+                    class="shrink-0 flex items-center gap-2" href="/#hero"><img alt="Fusion Lab Logo" fetchPriority="high"
+                        width="800" height="208" id="logo" decoding="async" data-nimg="1" class="h-8 w-8"
+                        style="color:transparent"
+                        srcSet="assets/logo.png"
+                        src="assets/logo.png" />
+                    <h5 class="text-sm font-medium text-white">Fusion Lab</h5>
+                </a>
+                <nav class="flex grow">
+                    <ul class="flex grow justify-end flex-wrap items-center">
+                        <li><a class="font-medium text-sm" href="/#features">Features</a></li>
+                        <li><a class="font-medium text-sm ml-10" href="/#faq">FAQ</a></li>
+                        <li><a class="font-medium text-sm ml-10" href="/pricing">Pricing</a></li>
+                        <!-- <li class="ml-6"><a
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground px-4 py-2 h-9"
+                                target="_blank" href="https://discord.gg/zPQJrNGuFB">Join Discord</a></li>
+                        <li class="ml-2"><a
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 h-9"
+                                href="https://app.diffusion.studio">Web Client</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="fixed safearea inset-x-0 top-4 justify-center z-50 hidden md:flex"
+            style="transform:translateY(-80px)">
+            <div
+                class="items-center w-full max-w-[450px] flex-row flex p-2 bg-gray-900 rounded-[14px] border border-gray-800">
+                <nav class="flex grow"><a class="shrink-0 flex" href="/#hero"><img alt="Fusion Lab Logo"
+                            fetchPriority="high" width="256" height="256" decoding="async" data-nimg="1"
+                            class="h-9 w-9 rounded-lg overflow-hidden" style="color:transparent"
+                            srcSet="assets/logo.png"
+                            src="assets/logo.png" /></a>
+                    <ul class="flex w-full justify-around items-center ml-2 xs:ml-3">
+                        <li><a class="font-medium text-sm" href="/#features">Features</a></li>
+                        <li><a class="font-medium text-sm" href="/#faq">FAQ</a></li>
+                        <li class="hidden xs:inline"><a class="font-medium text-sm" href="/pricing">Pricing</a></li>
+                        <li class="xs:hidden"><a class="font-medium text-sm" target="_blank"
+                                href="https://www.youtube.com/watch?v=MThspMqs4ew&amp;list=PLdm699WiVGK-xLmH8-OQCkLZLVGvbODTF&amp;index=1">Demo</a>
+                        </li>
+                    </ul>
+                    <ul class="hidden xs:flex xs:ml-1 items-center">
+                        <li class="ml-2"><a
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground px-4 py-2 h-9 ring-[1px] ring-gray-700 hover:ring-white"
+                                target="_blank" href="https://discord.gg/zPQJrNGuFB">Discord</a></li>
+                        <li class="ml-2"><a
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 h-9"
+                                href="https://app.diffusion.studio">Web Client</a></li>
+                    </ul><a
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 h-9 xs:hidden"
+                        target="_blank" href="https://discord.gg/zPQJrNGuFB">Join Discord</a>
+                </nav>
+            </div>
+        </header>
+        <header class="fixed safearea inset-x-0 top-4 justify-center z-50 flex md:hidden">
+            <div
+                class="items-center w-full max-w-[450px] flex-row flex p-2 bg-gray-900 rounded-[14px] border border-gray-800">
+                <nav class="flex grow"><a class="shrink-0 flex" href="/#hero"><img alt="Fusion Lab Logo"
+                            fetchPriority="high" width="256" height="256" id="logo" decoding="async" data-nimg="1"
+                            class="h-9 w-9 rounded-lg overflow-hidden" style="color:transparent"
+                            srcSet="assets/logo.png"
+                            src="assets/logo.png" /></a>
+                    <ul class="flex w-full justify-around items-center ml-2 xs:ml-3">
+                        <li><a class="font-medium text-sm" href="/#features">Features</a></li>
+                        <li><a class="font-medium text-sm" href="/#faq">FAQ</a></li>
+                        <li class="hidden xs:inline"><a class="font-medium text-sm" href="/pricing">Pricing</a></li>
+                        <li class="xs:hidden"><a class="font-medium text-sm" target="_blank"
+                                href="https://www.youtube.com/watch?v=MThspMqs4ew&amp;list=PLdm699WiVGK-xLmH8-OQCkLZLVGvbODTF&amp;index=1">Demo</a>
+                        </li>
+                    </ul>
+                    <ul class="hidden xs:flex xs:ml-1 items-center">
+                        <li class="ml-2"><a
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground px-4 py-2 h-9 ring-[1px] ring-gray-700 hover:ring-white"
+                                target="_blank" href="https://discord.gg/zPQJrNGuFB">Discord</a></li>
+                        <li class="ml-2"><a
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 h-9"
+                                href="https://app.diffusion.studio">Web Client</a></li>
+                    </ul><a
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 h-9 xs:hidden"
+                        target="_blank" href="https://discord.gg/zPQJrNGuFB">Join Discord</a>
+                </nav>
+            </div>
+        </header>
+        <main class="grow">
+            <section class="w-full relative" id="hero">
+                <div class="absolute inset-x-0 bottom-0 flex items-center justify-center opacity-70">
+                    <div
+                        class="w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/20 to-[#E0E0E0]/0 from-10% to-60%">
+                    </div>
+                </div>
+                <div class="safearea w-full flex-col flex pt-44 pb-24 items-center"><a
+                        class="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
+                        target="_blank" href="https://github.com/diffusionstudio/core"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-blocks h-4 w-4 mr-2">
+                            <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                            <path
+                                d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3">
+                            </path>
+                        </svg><span>NEW! Edit videos with code</span><svg width="15" height="15" viewBox="0 0 15 15"
+                            fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2">
+                            <path
+                                d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg></a>
+                    <h1
+                        class="mt-6 text-5xl sm:text-7xl max-w-sm sm:max-w-3xl font-semibold text-center tracking-tight inline-block text-foreground">
+                        Automate your video editing workflows</h1><span
+                        class="mt-4 text-center text-lg sm:text-xl text-gray-300 max-w-md sm:max-w-lg">The most
+                        efficient way to create, edit and manage short-form content at scale.</span>
+                    <div class="flex flex-row gap-4 mt-9 z-40"><button
+                            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-5"
+                            id="start-editing" data-umami-event="Start editing" type="button" aria-haspopup="dialog"
+                            aria-expanded="false" aria-controls="radix-:R34bd6pba:" data-state="closed">
+                            <a href=""> Start editing</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 ml-2">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></button>
+                        <div class="relative">
+                            <div
+                                class="absolute -z-10 -inset-12 -rotate-[25deg] rounded-full bg-zinc-500 blur-[60px] opacity-10">
+                            </div><a
+                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-5 z-10"
+                                id="watch-demo" data-umami-event="Watch demo" target="_blank"
+                                href="https://www.youtube.com/watch?v=MThspMqs4ew&amp;list=PLdm699WiVGK-xLmH8-OQCkLZLVGvbODTF&amp;index=1">Watch
+                                Demo<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2">
+                                    <path
+                                        d="M4.76447 3.12199C5.63151 3.04859 6.56082 3 7.5 3C8.43918 3 9.36849 3.04859 10.2355 3.12199C11.2796 3.21037 11.9553 3.27008 12.472 3.39203C12.9425 3.50304 13.2048 3.64976 13.4306 3.88086C13.4553 3.90618 13.4902 3.94414 13.5133 3.97092C13.7126 4.20149 13.8435 4.4887 13.918 5.03283C13.9978 5.6156 14 6.37644 14 7.52493C14 8.66026 13.9978 9.41019 13.9181 9.98538C13.8439 10.5206 13.7137 10.8061 13.5125 11.0387C13.4896 11.0651 13.4541 11.1038 13.4296 11.1287C13.2009 11.3625 12.9406 11.5076 12.4818 11.6164C11.9752 11.7365 11.3143 11.7942 10.2878 11.8797C9.41948 11.9521 8.47566 12 7.5 12C6.52434 12 5.58052 11.9521 4.7122 11.8797C3.68572 11.7942 3.02477 11.7365 2.51816 11.6164C2.05936 11.5076 1.7991 11.3625 1.57037 11.1287C1.54593 11.1038 1.51035 11.0651 1.48748 11.0387C1.28628 10.8061 1.15612 10.5206 1.08193 9.98538C1.00221 9.41019 1 8.66026 1 7.52493C1 6.37644 1.00216 5.6156 1.082 5.03283C1.15654 4.4887 1.28744 4.20149 1.48666 3.97092C1.5098 3.94414 1.54468 3.90618 1.56942 3.88086C1.7952 3.64976 2.05752 3.50304 2.52796 3.39203C3.04473 3.27008 3.7204 3.21037 4.76447 3.12199ZM0 7.52493C0 5.28296 0 4.16198 0.729985 3.31713C0.766457 3.27491 0.815139 3.22194 0.854123 3.18204C1.63439 2.38339 2.64963 2.29744 4.68012 2.12555C5.56923 2.05028 6.52724 2 7.5 2C8.47276 2 9.43077 2.05028 10.3199 2.12555C12.3504 2.29744 13.3656 2.38339 14.1459 3.18204C14.1849 3.22194 14.2335 3.27491 14.27 3.31713C15 4.16198 15 5.28296 15 7.52493C15 9.74012 15 10.8477 14.2688 11.6929C14.2326 11.7348 14.1832 11.7885 14.1444 11.8281C13.3629 12.6269 12.3655 12.71 10.3709 12.8763C9.47971 12.9505 8.50782 13 7.5 13C6.49218 13 5.52028 12.9505 4.62915 12.8763C2.63446 12.71 1.63712 12.6269 0.855558 11.8281C0.816844 11.7885 0.767442 11.7348 0.731221 11.6929C0 10.8477 0 9.74012 0 7.52493ZM5.25 5.38264C5.25 5.20225 5.43522 5.08124 5.60041 5.15369L10.428 7.27105C10.6274 7.35853 10.6274 7.64147 10.428 7.72895L5.60041 9.84631C5.43522 9.91876 5.25 9.79775 5.25 9.61736V5.38264Z"
+                                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden pb-24 w-full flex justify-center">
+                    <!-- <div class="h-[43vw] min-h-[320px] max-h-[600px] aspect-[2947/1144] relative"><img alt="App Ui"
+                            fetchPriority="high" width="2947" height="1144" decoding="async" data-nimg="1"
+                            class="absolute inset-0" srcSet=" _next/static/app-ui.webp 1x"
+                            src="_next/static/app-ui.webp" />
+                    </div> -->
+                </div>
+            </section>
+            <div class="safearea w-full flex flex-col items-center">
+                <h4 class="section-title-margin text-center text-lg sm:text-2xl font-semibold">Our users get billions of
+                    views with Fusion Lab</h4><span class="sm:text-xl text-gray-300 mt-1 sm:mt-2">Results
+                    from<!-- --> <a class="font-semibold text-blue-500" target="_blank"
+                        href="https://www.instagram.com/_om_kokate/">@_om_kokate</a></span>
+                <!-- <div
+                    class="w-full max-w-3xl grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 mt-10 gap-2 sm:gap-3 relative">
+
+                    <span class="videoplayer" style="display: flex; justify-content: center; align-items: center;">
+                        <video src="" height="300" width="900" style="border: 1px solid red;"></video>
+                        <video src="" height="300" width="900" style="border: 1px solid red;"></video>
+                        <video src="" height="300" width="900" style="border: 1px solid red;"></video>
+                        <video src="" height="300" width="900" style="border: 1px solid red;"></video>
+                        <video src="" height="300" width="900" style="border: 1px solid red;"></video>
+                        <video src="" height="300" width="900" style="border: 1px solid red;"></video>
+                        <video src="" height="300" width="900" style="border: 1px solid red;"></video>
+                    </span>
+
+
+                    <div
+                        class="absolute inset-y-0 -inset-x-2 sm:inset-x-0 bg-gradient-to-r from-gray-950 via-gray-950/0 to-gray-950">
+                    </div>
+
+                </div> -->
+
+                <div>
+                    <div class="videoplayer">
+                        <video width="420" height="540" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video width="420" height="340" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video width="420" height="340" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- <section class="section-padding w-full flex flex-col items-center relative">
+                <div class="absolute inset-x-0 bottom-0 flex items-center justify-center opacity-70">
+                    <div
+                        class="w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/20 to-[#E0E0E0]/0 from-10% to-60%">
+                    </div>
+                </div>
+                <div class="container relative flex items-center flex-col">
+                    <div
+                        class="absolute -inset-44 -z-10 rotate-12 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-50/20 to-gray-50/0 to-60% opacity-50">
+                    </div>
+                    <h2 class="text-4xl sm:text-6xl font-semibold text-center tracking-tighter max-w-2xl"><em
+                            class="text-gray-400 not-italic">Less effort.</em><br />More consistent.</h2><span
+                        class="text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6">Don&#x27;t
+                        waste
+                        time recreating your edits for every video. Set up editing pipelines to automate your
+                        format at
+                        scale.</span>
+                </div>
+                <div
+                    class="section-title-margin max-w-5xl w-full gap-y-14 sm:gap-y-20 md:gap-y-32 grid grid-cols-[1fr_130px] sm:grid-cols-[1fr_1fr]">
+                    <div
+                        class="sm:aspect-square w-full flex flex-col justify-center h-full pr-8 sm:pr-9 md:pr-12 lg:pr-24">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.5 30.1538V20.9667C13.5 18.3531 13.5 17.0463 14.0086 16.048C14.456 15.17 15.17 14.456 16.048 14.0086C17.0463 13.5 18.3531 13.5 20.9667 13.5H27.0333C29.6469 13.5 30.9537 13.5 31.952 14.0086C32.83 14.456 33.544 15.17 33.9914 16.048C34.5 17.0463 34.5 18.3531 34.5 20.9667V22.3667C34.5 24.9802 34.5 26.287 33.9914 27.2853C33.544 28.1634 32.83 28.8773 31.952 29.3247C30.9537 29.8333 29.6469 29.8333 27.0333 29.8333H22.0857C21.5009 29.8333 21.2085 29.8333 20.9342 29.9008C20.691 29.9605 20.459 30.0591 20.2471 30.1926C20.008 30.3432 19.805 30.5536 19.399 30.9745L18.315 32.098C16.8099 33.6579 16.0574 34.4379 15.4092 34.4971C14.8469 34.5484 14.2944 34.3254 13.9254 33.898C13.5 33.4053 13.5 32.3215 13.5 30.1538Z"
+                                fill="url(#paint0_radial_2860_9519)"></path>
+                            <rect x="0.5" y="0.5" width="47" height="47" rx="11.5"
+                                stroke="url(#paint1_linear_2860_9519)"></rect>
+                            <defs>
+                                <radialGradient id="paint0_radial_2860_9519" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(24 14) rotate(90) scale(35.5 110.324)">
+                                    <stop stop-color="#D4D4D8"></stop>
+                                    <stop offset="1" stop-color="#D4D4D8" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <linearGradient id="paint1_linear_2860_9519" x1="24" y1="-7.5" x2="24" y2="49.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" stop-opacity="0.93"></stop>
+                                    <stop offset="0.525672" stop-color="white" stop-opacity="0.320481"></stop>
+                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h3
+                            class="font-semibold text-[22px] md:text-[40px] leading-tight tracking-tighter mt-3 md:mt-6 max-w-[200px] md:max-w-[320px]">
+                            Chat based editing interface</h3>
+                        <p class="text-gray-300 text-lg hidden sm:block sm:text-base md:text-xl mt-4 lg:mt-10">
+                            Diffusion
+                            Studio effortlessly adapts to your personal workflow with its revolutionary,
+                            chat-based
+                            editing interface.</p>
+                    </div>
+                    <div
+                        class="block aspect-square bg-gray-800 border-2 border-gray-50/5 rounded-2xl sm:rounded-3xl relative overflow-hidden">
+                        <img alt="Chat Ui Component" loading="lazy" width="1200" height="1200" decoding="async"
+                            data-nimg="1" class="w-full h-full" style="color:transparent"
+                            srcSet="/_next/static/image.webp" src="/_next/static/image.webp" />
+                    </div>
+                    <p class="text-gray-300 text-lg sm:hidden -mt-6 col-span-2">Fusion Lab effortlessly adapts to
+                        your personal workflow with its revolutionary, chat-based editing interface.</p>
+                    <div
+                        class="sm:aspect-square w-full flex flex-col justify-center h-full pr-8 sm:pl-9 md:pl-12 lg:pl-24 sm:col-start-2 sm:row-start-2">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="47" height="47" rx="11.5"
+                                stroke="url(#paint0_linear_2860_9520)"></rect>
+                            <path
+                                d="M15.2612 25.3768L13.5345 15.4484C13.5115 15.3164 13.5 15.1826 13.5 15.0486V14.6667C13.5 14.0223 14.0223 13.5 14.6667 13.5H15.0486C15.1826 13.5 15.3164 13.5115 15.4484 13.5345L25.3768 15.2612C27.4149 15.6157 29.1128 17.0231 29.8392 18.9601L32.1667 25.1667L25.1667 32.1667L18.9601 29.8392C17.0231 29.1129 15.6156 27.4149 15.2612 25.3768Z"
+                                fill="url(#paint1_radial_2860_9520)" fill-opacity="0.4"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.8417 13.8417C14.2973 13.3861 15.036 13.3861 15.4916 13.8417L22.2289 20.579C22.4217 20.5275 22.6243 20.5 22.8333 20.5C24.122 20.5 25.1667 21.5447 25.1667 22.8333C25.1667 24.122 24.122 25.1667 22.8333 25.1667C21.5447 25.1667 20.5 24.122 20.5 22.8333C20.5 22.6243 20.5275 22.4217 20.579 22.2289L13.8417 15.4916C13.3861 15.036 13.3861 14.2973 13.8417 13.8417ZM25.167 32.167L26.8187 33.8187C27.73 34.73 29.2074 34.73 30.1186 33.8187L33.8187 30.1186C34.73 29.2074 34.73 27.73 33.8187 26.8187L32.167 25.167L25.167 32.167Z"
+                                fill="url(#paint2_radial_2860_9520)"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_2860_9520" x1="24" y1="-7.5" x2="24" y2="49.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" stop-opacity="0.93"></stop>
+                                    <stop offset="0.525672" stop-color="white" stop-opacity="0.320481"></stop>
+                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <radialGradient id="paint1_radial_2860_9520" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(20.166 18.8328) rotate(63.7052) scale(42.1336 130.966)">
+                                    <stop stop-color="white"></stop>
+                                    <stop offset="1" stop-color="#D4D4D8" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <radialGradient id="paint2_radial_2860_9520" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(21 19.5) rotate(63.7052) scale(47.4052 147.352)">
+                                    <stop stop-color="white"></stop>
+                                    <stop offset="1" stop-color="#D4D4D8" stop-opacity="0"></stop>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <h3
+                            class="font-semibold text-[22px] md:text-[40px] leading-tight tracking-tighter mt-3 md:mt-6 max-w-[200px] md:max-w-[320px]">
+                            Versatile style personalization</h3>
+                        <p class="text-gray-300 text-lg hidden sm:block sm:text-base md:text-xl mt-4 lg:mt-10">
+                            Swiftly
+                            transition within the innovative Fusion Lab user interface to a modern editing view
+                            for precise adjustments, similar to Adobe Premiere or Cap Cut.</p>
+                    </div>
+                    <div
+                        class="block aspect-square bg-gray-800 border-2 border-gray-50/5 rounded-2xl sm:rounded-3xl relative overflow-hidden">
+                        <img alt="Editor Ui Component" loading="lazy" width="1200" height="1200" decoding="async"
+                            data-nimg="1" class="w-full h-full" style="color:transparent"
+                            srcSet="_next/static/image (1).webp" src="_next/static/image (1).webp" />
+                    </div>
+                    <p class="text-gray-300 text-lg sm:hidden -mt-6 col-span-2">Swiftly transition within the
+                        innovative
+                        Fusion Lab user interface to a modern editing view for precise adjustments, similar to
+                        Adobe Premiere or Cap Cut.</p>
+                    <div
+                        class="sm:aspect-square w-full flex flex-col justify-center h-full pr-8 sm:pr-9 md:pr-12 lg:pr-24">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="47" height="47" rx="11.5"
+                                stroke="url(#paint0_linear_2860_9531)"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M26 12C27.1046 12 28 12.8581 28 13.9167C28 16.0338 29.7909 17.7501 32 17.7501C33.1046 17.7501 34 18.6082 34 19.6668C34 20.7254 33.1046 21.5835 32 21.5835C30.5429 21.5835 29.1767 21.2101 28 20.5578V28.2916C28 28.2917 28 28.2918 28 28.2919C27.9998 31.9967 24.8659 35 21 35C17.134 35 14 31.9965 14 28.2916C14 25.0438 16.4062 22.339 19.6021 21.7173C20.6846 21.5067 21.7403 22.177 21.96 23.2144C22.1798 24.2518 21.4804 25.2635 20.3979 25.474C19.0294 25.7403 18 26.9029 18 28.2916C18 29.8794 19.3431 31.1666 21 31.1666C22.6567 31.1666 23.9998 29.8796 24 28.2919C24 28.2918 24 28.2917 24 28.2916V13.9167C24 12.8581 24.8954 12 26 12Z"
+                                fill="url(#paint1_radial_2860_9531)"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_2860_9531" x1="24" y1="-7.5" x2="24" y2="49.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" stop-opacity="0.93"></stop>
+                                    <stop offset="0.525672" stop-color="white" stop-opacity="0.320481"></stop>
+                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <radialGradient id="paint1_radial_2860_9531" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(24 12.5475) rotate(80.9245) scale(47.5477 128.518)">
+                                    <stop stop-color="#F0F0F0"></stop>
+                                    <stop offset="1" stop-color="#D4D4D8" stop-opacity="0"></stop>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <h3
+                            class="font-semibold text-[22px] md:text-[40px] leading-tight tracking-tighter mt-3 md:mt-6 max-w-[200px] md:max-w-[320px]">
+                            Social media ui simulation</h3>
+                        <p class="text-gray-300 text-lg hidden sm:block sm:text-base md:text-xl mt-4 lg:mt-10">
+                            Gain
+                            insight into your editing&#x27;s look and feel, by previewing your video in a
+                            simulator
+                            before wasting time on rendering and uploading it to social media.</p>
+                    </div>
+                    <div
+                        class="block aspect-square bg-gray-800 border-2 border-gray-50/5 rounded-2xl sm:rounded-3xl relative overflow-hidden">
+                        <img alt="Editor Ui Component" loading="lazy" width="1200" height="1200" decoding="async"
+                            data-nimg="1" class="w-full h-full" style="color:transparent"
+                            srcSet="_next/static/image (2).webp" src="_next/static/image (2).webp" />
+                    </div>
+                    <p class="text-gray-300 text-lg sm:hidden -mt-6 col-span-2">Gain insight into your
+                        editing&#x27;s
+                        look and feel, by previewing your video in a simulator before wasting time on rendering
+                        and
+                        uploading it to social media.</p>
+                </div>
+            </section> -->
+            <section class="section-padding w-full flex flex-col items-center relative" id="features">
+                <div class="absolute inset-x-0 bottom-0 flex items-center justify-center opacity-70">
+                    <div
+                        class="w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/20 to-[#E0E0E0]/0 from-10% to-60%">
+                    </div>
+                </div>
+                <div class="container relative flex items-center flex-col">
+                    <h2 class="text-4xl sm:text-6xl font-semibold text-center tracking-tighter max-w-2xl"><em
+                            class="text-gray-400 not-italic">Viral edits.</em><br />Completely automated</h2>
+                    <span class="text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6">Thanks
+                        to the
+                        latest state-of-the-art machine learning models, you can have algorithms do the work for
+                        you</span>
+                </div>
+                <div class="section-title-margin max-w-5xl w-full gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                    <div
+                        class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M4 24V16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76516 28 12.8174 28 16V24"
+                                stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M28 25.3337C28 26.0409 27.719 26.7192 27.219 27.2193C26.7189 27.7194 26.0406 28.0003 25.3333 28.0003H24C23.2928 28.0003 22.6145 27.7194 22.1144 27.2193C21.6143 26.7192 21.3333 26.0409 21.3333 25.3337V21.3337C21.3333 20.6264 21.6143 19.9481 22.1144 19.448C22.6145 18.9479 23.2928 18.667 24 18.667H28V25.3337ZM4 25.3337C4 26.0409 4.28095 26.7192 4.78105 27.2193C5.28115 27.7194 5.95942 28.0003 6.66667 28.0003H8C8.70724 28.0003 9.38552 27.7194 9.88562 27.2193C10.3857 26.7192 10.6667 26.0409 10.6667 25.3337V21.3337C10.6667 20.6264 10.3857 19.9481 9.88562 19.448C9.38552 18.9479 8.70724 18.667 8 18.667H4V25.3337Z"
+                                stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg><span class="font-semibold mt-4 md:mt-5">Text-to-Speech</span>
+                        <p class="mt-1 text-gray-400">Create high-quality spoken audio with more than 20 voices.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M16 1.33301C14.9391 1.33301 13.9217 1.75444 13.1716 2.50458C12.4214 3.25473 12 4.27214 12 5.33301V15.9997C12 17.0605 12.4214 18.078 13.1716 18.8281C13.9217 19.5782 14.9391 19.9997 16 19.9997C17.0609 19.9997 18.0783 19.5782 18.8284 18.8281C19.5786 18.078 20 17.0605 20 15.9997V5.33301C20 4.27214 19.5786 3.25473 18.8284 2.50458C18.0783 1.75444 17.0609 1.33301 16 1.33301Z"
+                                stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M25.3327 13.333V15.9997C25.3327 18.475 24.3494 20.849 22.599 22.5993C20.8487 24.3497 18.4747 25.333 15.9993 25.333C13.524 25.333 11.15 24.3497 9.39969 22.5993C7.64935 20.849 6.66602 18.475 6.66602 15.9997V13.333"
+                                stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 25.333V30.6663" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M10.666 30.667H21.3327" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg><span class="font-semibold mt-4 md:mt-5">Speech Recognition</span>
+                        <p class="mt-1 text-gray-400">Accurately transcribe your videos automatically.</p>
+                    </div>
+                    <div
+                        class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none">
+                            <path d="M6.16016 9.94238V5.94238H27.4935V9.94238" stroke="#A1A1AA" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M12.8271 27.2764H20.8271" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M16.8271 5.94238V27.2757" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg><span class="font-semibold mt-4 md:mt-5">Script Generation</span>
+                        <p class="mt-1 text-gray-400">Generate engaging scripts with a specialised large
+                            language model.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M24 28C26.2091 28 28 26.2091 28 24C28 21.7909 26.2091 20 24 20C21.7909 20 20 21.7909 20 24C20 26.2091 21.7909 28 24 28Z"
+                                stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z"
+                                stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M8 28V12C8 15.1826 9.26428 18.2348 11.5147 20.4853C13.7652 22.7357 16.8174 24 20 24"
+                                stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg><span class="font-semibold mt-4 md:mt-5">Project Workflows</span>
+                        <p class="mt-1 text-gray-400">Supercharge your edits with ready-to-use dedicated
+                            workflows.</p>
+                    </div>
+                    <div
+                        class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M30.6673 8L18.0007 20.6667L11.334 14L1.33398 24" stroke="#A1A1AA" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M22.666 8H30.666V16" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg><span class="font-semibold mt-4 md:mt-5">Caption Templates</span>
+                        <p class="mt-1 text-gray-400">Integrate the latest viral captions themes with a single
+                            click.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M5.33301 12H26.6663" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M5.33301 20H26.6663" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M13.3337 4L10.667 28" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M21.3337 4L18.667 28" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg><span class="font-semibold mt-4 md:mt-5">Automated Hashtags</span>
+                        <p class="mt-1 text-gray-400">Spend no more time on hashtag optimization, we got your
+                            back.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding w-full flex flex-col items-center relative" id="faq">
+                <div class="absolute -inset-x-52 bottom-0 flex items-center justify-center opacity-60">
+                    <div
+                        class="w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/30 to-[#E0E0E0]/0 from-10% to-60%">
+                    </div>
+                </div>
+                <div class="container relative flex items-center flex-col">
+                    <h2 class="text-4xl sm:text-6xl font-semibold text-center tracking-tighter max-w-2xl">
+                        Frequently
+                        asked questions</h2><span
+                        class="text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6">Interested
+                        in FusionLab?
+                        Explore our FAQ section for answers to common questions about my
+                        application.</span>
+                </div>
+                <div class="mt-20 sm:mt-24 z-30">
+                    <div class="max-w-3xl mx-auto flex flex-col border-y border-gray-700 divide-y divide-gray-700">
+                        <button class="px-1 py-6 flex flex-row w-full gap-7 text-left"><svg width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" class="stroke-gray-300 mt-[5px] min-w-[16px] rotate-45">
+                                <path d="M8 1V15" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M15 8H1" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-lg sm:text-xl font-medium text-gray-50">Is Fusion Lab free to use?
+                                </h4>
+                                <p class="text-gray-300 mt-1 sm:mt-3 ">Yes it is. You can get started for free without the need for a credit card or an account. Just open the web page and enjoy.</p>
+                            </div>
+                        </button><button class="px-1 py-6 flex flex-row w-full gap-7 text-left"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none"
+                                class="stroke-gray-300 mt-[5px] min-w-[16px]  rotate-45">
+                                <path d="M8 1V15" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M15 8H1" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-lg sm:text-xl font-medium text-gray-50">Can I use Fusion Lab for
+                                    commercial purposes?</h4>
+                                <p class="text-gray-300 mt-1 sm:mt-3 ">Certainly, users can use the content generated by Fusion Lab for commercial purposes.</p>
+                            </div>
+                        </button><button class="px-1 py-6 flex flex-row w-full gap-7 text-left"><svg width="16"
+                                height="16" viewBox="0 0 16 16 " fill="none"
+                                class="stroke-gray-300 mt-[5px] min-w-[16px] rotate-45">
+                                <path d="M8 1V15" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M15 8H1" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-lg sm:text-xl font-medium text-gray-50">What&#x27;s the
+                                    advantage of
+                                    Fusion Lab over traditional video editing Softwares?</h4>
+                                <p class="text-gray-300 mt-1 sm:mt-3 ">We aim to automate the video editing process as much as possible. This inevitably leads to fewer configuration options than with tools such as Adobe Premiere. But it also allows you to work 100 times more productive.</p>
+                            </div>
+                        </button><button class="px-1 py-6 flex flex-row w-full gap-7 text-left"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none"
+                                class="stroke-gray-300 mt-[5px] min-w-[16px] rotate-45 ">
+                                <path d="M8 1V15" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M15 8H1" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-lg sm:text-xl font-medium text-gray-50">What are the supported
+                                    languages?</h4>
+                                <p class="text-gray-300 mt-1 sm:mt-3 ">Diffusion Studio currently supports English. However, it may expand to support other languages in the future.</p>
+                            </div>
+                        <!-- </button><button class="px-1 py-6 flex flex-row w-full gap-7 text-left"><svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none"
+                                class="stroke-gray-300 mt-[5px] min-w-[16px] rotate-45">
+                                <path d="M8 1V15" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M15 8H1" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-lg sm:text-xl font-medium text-gray-50">Can I use the Fusion Lab
+                                    for YouTube Videos?</h4>
+                                <p class="text-gray-300 mt-1 sm:mt-3 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Debitis, veniam eveniet. Laborum aliquid incidunt
+                                    voluptatum
+                                    mollitia autem quisquam, sit commodi blanditiis culpa facere doloribus id
+                                    iste.
+                                    Amet, possimus alias. Quam!</p>
+                            </div>
+                        </button> -->
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="safearea flex flex-col items-center pt-20 pb-12 relative">
+                <div
+                    class="container p-10 lg:p-6 relative items-center flex flex-col lg:flex-row bg-gray-900 border-gray-800 border rounded-xl lg:rounded-2xl lg:justify-between">
+                    <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-8"><svg width="56" height="43"
+                            viewBox="0 0 56 43" fill="none">
+                            <path
+                                d="M47.4374 3.91782C43.7582 2.25094 39.874 1.06839 35.8842 0.400391C35.3382 1.36622 34.8442 2.35992 34.4042 3.37735C30.1543 2.74361 25.8324 2.74361 21.5825 3.37735C21.1423 2.36003 20.6483 1.36633 20.1025 0.400391C16.1101 1.07403 12.2234 2.25938 8.54046 3.92654C1.22884 14.6314 -0.753228 25.0704 0.237806 35.3612C4.51968 38.4918 9.31231 40.8727 14.4074 42.4004C15.5546 40.8735 16.5698 39.2536 17.4421 37.5579C15.7853 36.9456 14.1861 36.19 12.6632 35.3001C13.064 35.0125 13.456 34.7161 13.8348 34.4284C18.2662 36.4907 23.1029 37.5599 28 37.5599C32.897 37.5599 37.7337 36.4907 42.1651 34.4284C42.5483 34.7379 42.9403 35.0343 43.3368 35.3001C41.8108 36.1915 40.2088 36.9485 38.549 37.5623C39.4202 39.2571 40.4355 40.8757 41.5837 42.4004C46.6831 40.8788 51.4795 38.4991 55.7621 35.3655C56.9249 23.4315 53.7756 13.0884 47.4374 3.91782ZM18.6975 29.0324C15.9358 29.0324 13.6542 26.5523 13.6542 23.5013C13.6542 20.4502 15.8565 17.9483 18.6886 17.9483C21.5208 17.9483 23.7848 20.4502 23.7363 23.5013C23.6879 26.5523 21.512 29.0324 18.6975 29.0324ZM37.3025 29.0324C34.5364 29.0324 32.2636 26.5523 32.2636 23.5013C32.2636 20.4502 34.4659 17.9483 37.3025 17.9483C40.139 17.9483 42.3854 20.4502 42.3369 23.5013C42.2885 26.5523 40.117 29.0324 37.3025 29.0324Z"
+                                fill="#E4E4E7"></path>
+                        </svg>
+                        <div class="flex flex-col text-center lg:text-start">
+                            <h6 class="text-xl font-medium">Join our awesome community</h6>
+                            <p class="text-gray-400 lg:leading-none mt-2 lg:mt-1">Share your work, seek support,
+                                stay up
+                                to date and network with ds-mates.</p>
+                        </div>
+                    </div><a target="_blank"
+                        class="inline-flex font-medium h-12 px-5 gap-1 mt-10 lg:mt-0 items-center bg-gray-200 text-gray-950 hover:text-gray-200 hover:bg-transparent border rounded-lg"
+                        href="https://discord.gg/zPQJrNGuFB">Join our Discord</a>
+                </div>
+            </section> -->
+        </main>
+        <footer class="safearea relative w-full overflow-x-hidden flex justify-center">
+            <div class="container px-0 py-6 sm:py-8 flex flex-col">
+                <div class="flex flex-col md:flex-row justify-between w-full mb-14">
+                    <div class="flex flex-col justify-between"><a href="/"><svg width="45" height="28"
+                                viewBox="0 0 45 28" fill="none">
+                                <path
+                                    d="M44.0904 19.9709C44.0904 22.4163 43.2074 24.3726 41.4412 25.8399C39.7023 27.28 37.4063 28 34.5533 28C31.4558 28 28.8881 27.4158 26.8503 26.2475V20.9898C29.187 22.6744 31.7411 23.5167 34.5126 23.5167C35.7624 23.5167 36.7678 23.2179 37.5286 22.6201C38.2894 21.9951 38.6698 21.1664 38.6698 20.1339C38.6698 19.6448 38.5747 19.2101 38.3845 18.8297C38.1943 18.4493 37.8003 18.0689 37.2025 17.6885C36.6319 17.3081 36.1836 17.0364 35.8575 16.8734C35.5587 16.7103 34.9201 16.4114 33.942 15.9767C33.6703 15.8409 33.4665 15.7458 33.3306 15.6914C32.3253 15.2295 31.5101 14.8219 30.8852 14.4687C30.2603 14.0883 29.581 13.5856 28.8474 12.9607C28.1137 12.3358 27.5567 11.5885 27.1763 10.7191C26.8231 9.84959 26.6465 8.85784 26.6465 7.74381C26.6465 5.40708 27.5024 3.53226 29.2142 2.11936C30.9531 0.706453 33.2491 0 36.1021 0C38.6834 0 40.9114 0.448326 42.7862 1.34498V6.31732C40.7484 5.09461 38.5747 4.48326 36.2651 4.48326C34.9881 4.48326 33.9827 4.76856 33.2491 5.33915C32.5427 5.90975 32.1894 6.64338 32.1894 7.54003C32.1894 8.43668 32.5698 9.18389 33.3306 9.78166C34.1186 10.3523 35.2869 10.9908 36.8357 11.6972C37.9226 12.1863 38.8056 12.6211 39.4849 13.0015C40.1642 13.3547 40.8978 13.8574 41.6858 14.5095C42.5009 15.1616 43.0987 15.9495 43.4791 16.8734C43.8867 17.77 44.0904 18.8025 44.0904 19.9709Z"
+                                    fill="#52525B"></path>
+                                <path
+                                    d="M8.96652 27.6733H0V0.203125H8.96652C13.0694 0.203125 16.425 1.46659 19.0335 3.99352C21.6419 6.52045 22.9461 9.71307 22.9461 13.5714C22.9461 17.7829 21.6827 21.1929 19.1558 23.8014C16.6288 26.3827 13.2324 27.6733 8.96652 27.6733ZM8.80349 4.52336H5.25764V23.3938H8.88501C11.7652 23.3938 13.9525 22.5107 15.4469 20.7446C16.9413 18.9513 17.6885 16.5602 17.6885 13.5714C17.6885 10.9358 16.8869 8.77566 15.2838 7.09104C13.7079 5.37925 11.5478 4.52336 8.80349 4.52336Z"
+                                    fill="#52525B"></path>
+                            </svg></a>
+                        <div class="flex flex-col gap-1 mt-7 md:mt-0">
+                            <h6 class="text-lg">Made by <em class="not-italic underline">Fusion Lab</em></h6>
+                            <p class="text-sm text-gray-400 lg:max-w-[60%] mr-16 mt-1 lg:mt-0">Fusion Lab is an
+                                experimental application, so please be aware that there may be some imperfections as we
+                                continue to improve the application.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-8 sm:gap-20 mt-10 md:mt-8 lg:mt-0">
+                        <!-- <div class="flex flex-col gap-4">
+                            <h6 class="font-semibold">Solutions</h6>
+                            <ul class="text-sm space-y-[10px]">
+                                <li><a href="https://app.diffusion.studio">Web-Client</a></li>
+                                <li><a href="https://github.com/diffusionstudio/core" target="_blank">Programmatic
+                                        Editing</a></li>
+                                <li><a href="https://ffmpeg-js-preview.vercel.app/" target="_blank">Web Converter</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="flex flex-col gap-4">
+                            <h6 class="font-semibold">Resources</h6>
+                            <ul class="text-sm space-y-[10px]">
+                                <li><a href="/pricing">Pricing</a></li>
+                                <li><a href="/imprint">Imprint</a></li>
+                                <li><a href="/privacy">Privacy Policy</a></li>
+                                <li><a href="/tos">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h6 class="font-semibold">Social</h6>
+                            <ul class="text-sm space-y-[10px]">
+                                <li><a target="_blank" href="https://www.tiktok.com/@diffusion.studio">Instagram</a></li>
+                                </li>
+                                <li><a target="_blank" href="https://github.com/diffusion-studio">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:flex md:items-center md:justify-between border-t border-gray-800 pt-6 sm:pt-8">
+                    <ul class="flex gap-3 mb-4 md:order-1 md:ml-4 md:mb-0">
+                        <li><a class="flex justify-center items-center" aria-label="Github" target="_blank"
+                                href="https://github.com/diffusion-studio"><svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.97668 1.5791C5.6241 1.5791 2.10547 5.19752 2.10547 9.674C2.10547 13.2523 4.35998 16.2812 7.48758 17.3533C7.87862 17.4339 8.02185 17.1791 8.02185 16.9648C8.02185 16.7771 8.00896 16.1339 8.00896 15.4636C5.81938 15.9462 5.36342 14.4987 5.36342 14.4987C5.01154 13.5605 4.49016 13.3194 4.49016 13.3194C3.77351 12.8235 4.54236 12.8235 4.54236 12.8235C5.33732 12.8771 5.75445 13.6544 5.75445 13.6544C6.45805 14.8873 7.59183 14.539 8.04795 14.3245C8.11304 13.8018 8.32169 13.44 8.54322 13.239C6.79688 13.0513 4.9595 12.3544 4.9595 9.24505C4.9595 8.36052 5.27206 7.63683 5.76734 7.074C5.6892 6.87302 5.41546 6.04193 5.84564 4.92959C5.84564 4.92959 6.51025 4.71512 8.0088 5.76052C8.65038 5.58332 9.31203 5.49318 9.97668 5.49242C10.6413 5.49242 11.3188 5.58634 11.9444 5.76052C13.4431 4.71512 14.1077 4.92959 14.1077 4.92959C14.5379 6.04193 14.264 6.87302 14.1859 7.074C14.6942 7.63683 14.9939 8.36052 14.9939 9.24505C14.9939 12.3544 13.1565 13.0378 11.3971 13.239C11.6839 13.4936 11.9314 13.976 11.9314 14.74C11.9314 15.8255 11.9185 16.6967 11.9185 16.9646C11.9185 17.1791 12.0619 17.4339 12.4527 17.3534C15.5803 16.2811 17.8348 13.2523 17.8348 9.674C17.8477 5.19752 14.3162 1.5791 9.97668 1.5791Z"
+                                        fill="#F4F4F5"></path>
+                                </svg></a></li>
+                        <li><a class="flex justify-center items-center" aria-label="TikTok" target="_blank"
+                                href="https://www.tiktok.com/@diffusion.studio"><svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M16.1945 5.74831C15.3924 5.57743 14.6661 5.15587 14.1214 4.54507C13.5768 3.93427 13.2423 3.16618 13.1666 2.35275V2H10.3998V12.9362C10.3981 13.4203 10.2441 13.8918 9.95952 14.2843C9.67491 14.6768 9.27396 14.9706 8.81304 15.1244C8.35211 15.2783 7.85437 15.2844 7.38976 15.142C6.92515 14.9996 6.51702 14.7157 6.22273 14.3304C5.92387 13.9386 5.75808 13.4621 5.74941 12.9702C5.74074 12.4782 5.88964 11.9963 6.17451 11.5943C6.45938 11.1923 6.86542 10.8911 7.33374 10.7344C7.80207 10.5777 8.30832 10.5737 8.77911 10.7229V7.92322C7.72929 7.77868 6.66037 7.96457 5.72185 8.45489C4.78333 8.94521 4.02217 9.71543 3.54481 10.6578C3.06746 11.6002 2.8978 12.6676 3.05956 13.7108C3.22133 14.7539 3.70642 15.7207 4.44699 16.4757C5.15324 17.1954 6.0588 17.6892 7.04807 17.894C8.03735 18.0988 9.06547 18.0054 10.0012 17.6257C10.9369 17.2459 11.7378 16.5971 12.3016 15.7619C12.8654 14.9268 13.1666 13.9433 13.1666 12.937V7.3489C14.2848 8.14507 15.6255 8.57197 17 8.56954V5.8315C16.7293 5.83183 16.4593 5.80395 16.1945 5.74831Z"
+                                        fill="#F4F4F5"></path>
+                                </svg></a></li>
+                        <li><a class="flex justify-center items-center" aria-label="Youtube" target="_blank"
+                                href="https://www.youtube.com/@DiffusionStudio4k"><svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M17.9944 6.00283C17.8995 5.65067 17.714 5.3295 17.4564 5.0713C17.1988 4.81311 16.8781 4.62688 16.5261 4.53117C15.2211 4.17283 10.0003 4.167 10.0003 4.167C10.0003 4.167 4.78027 4.16117 3.47444 4.50367C3.12271 4.60379 2.80263 4.79265 2.54491 5.05211C2.2872 5.31157 2.10051 5.63293 2.00277 5.98533C1.65861 7.29033 1.65527 9.997 1.65527 9.997C1.65527 9.997 1.65194 12.717 1.99361 14.0087C2.18527 14.7228 2.74777 15.287 3.46277 15.4795C4.78111 15.8378 9.98777 15.8437 9.98777 15.8437C9.98777 15.8437 15.2086 15.8495 16.5136 15.5078C16.8657 15.4123 17.1867 15.2265 17.445 14.9688C17.7032 14.7111 17.8898 14.3905 17.9861 14.0387C18.3311 12.7345 18.3336 10.0287 18.3336 10.0287C18.3336 10.0287 18.3503 7.30783 17.9944 6.00283ZM8.33027 12.5045L8.33444 7.5045L12.6736 10.0087L8.33027 12.5045Z"
+                                        fill="#F4F4F5"></path>
+                                </svg></a></li>
+                        <li><a class="flex justify-center items-center" aria-label="Discord" target="_blank"
+                                href="https://discord.gg/zPQJrNGuFB"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M15.9006 4.58873C14.7837 4.07279 13.6046 3.70676 12.3934 3.5C12.2276 3.79895 12.0777 4.10652 11.9441 4.42144C10.654 4.22528 9.34196 4.22528 8.05181 4.42144C7.91817 4.10655 7.76821 3.79898 7.60254 3.5C6.39057 3.70851 5.21068 4.0754 4.09264 4.59143C1.87304 7.90484 1.27134 11.1359 1.57219 14.3212C2.87204 15.2902 4.32695 16.0271 5.87366 16.5C6.22193 16.0274 6.53011 15.526 6.79493 15.0011C6.29195 14.8116 5.80649 14.5778 5.34417 14.3023C5.46584 14.2133 5.58485 14.1215 5.69984 14.0325C7.0451 14.6708 8.51338 15.0018 9.99997 15.0018C11.4866 15.0018 12.9548 14.6708 14.3001 14.0325C14.4164 14.1283 14.5354 14.22 14.6558 14.3023C14.1926 14.5782 13.7062 14.8125 13.2023 15.0025C13.4668 15.5271 13.775 16.0281 14.1236 16.5C15.6716 16.029 17.1277 15.2924 18.4277 14.3225C18.7807 10.6287 17.8247 7.42725 15.9006 4.58873ZM7.176 12.3623C6.33764 12.3623 5.64502 11.5946 5.64502 10.6503C5.64502 9.70589 6.31357 8.93151 7.17333 8.93151C8.03309 8.93151 8.72036 9.70589 8.70565 10.6503C8.69094 11.5946 8.03041 12.3623 7.176 12.3623ZM12.8239 12.3623C11.9842 12.3623 11.2943 11.5946 11.2943 10.6503C11.2943 9.70589 11.9628 8.93151 12.8239 8.93151C13.685 8.93151 14.367 9.70589 14.3522 10.6503C14.3375 11.5946 13.6783 12.3623 12.8239 12.3623Z"
+                                        fill="#F4F4F5"></path>
+                                </svg></a></li>
+                    </ul>
+                    <div class="text-sm">© 2024 Fusion Lab. All rights reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events:none">
+        <ol tabindex="-1"
+            class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]">
+        </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="/_next/static/chunks/webpack-6c947d1d95e21e43.js" async=""></script>
+    <script src="/_next/static/chunks/2443530c-354cefd59ec03fee.js" async=""></script>
+    <script src="/_next/static/chunks/139-9b902e091d519aa7.js" async=""></script>
+    <script src="/_next/static/chunks/main-app-2bb14465110eb4e2.js" async=""></script>
+</body>
+
+</html>
+<script>(self.__next_f = self.__next_f || []).push([0])</script>
+<script>self.__next_f.push([1, "1:HL[\"/_next/static/media/a34f9d1faa5f3315-s.p.woff2\",{\"as\":\"font\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/95a342299e7d323f.css\",{\"as\":\"style\"}]\n0:\"$L3\"\n"])</script>
+<script>self.__next_f.push([1, "4:I{\"id\":\"7858\",\"chunks\":[\"272:static/chunks/webpack-6c947d1d95e21e43.js\",\"667:static/chunks/2443530c-354cefd59ec03fee.js\",\"139:static/chunks/139-9b902e091d519aa7.js\"],\"name\":\"\",\"async\":false}\n6:I{\"id\":\"3055\",\"chunks\":[\"272:static/chunks/webpack-6c947d1d95e21e43.js\",\"667:static/chunks/2443530c-354cefd59ec03fee.js\",\"139:static/chunks/139-9b902e091d519aa7.js\"],\"name\":\"\",\"async\":false}\n7:I{\"id\":\"9271\",\"chunks\":[\"271:static/chunks/271-9580839486189aa0.js\",\"919:static/chunks/919-0112c2013852beab.js\",\"44:static/c"])</script>
+<script>self.__next_f.push([1, "hunks/44-df6c5aa976d66b6e.js\",\"185:static/chunks/app/layout-dec30bb175c25441.js\"],\"name\":\"Toaster\",\"async\":false}\n8:I{\"id\":\"7951\",\"chunks\":[\"271:static/chunks/271-9580839486189aa0.js\",\"919:static/chunks/919-0112c2013852beab.js\",\"44:static/chunks/44-df6c5aa976d66b6e.js\",\"185:static/chunks/app/layout-dec30bb175c25441.js\"],\"name\":\"\",\"async\":false}\n9:I{\"id\":\"9544\",\"chunks\":[\"272:static/chunks/webpack-6c947d1d95e21e43.js\",\"667:static/chunks/2443530c-354cefd59ec03fee.js\",\"139:static/chunks/139-9b902e091d519aa7.js"])</script>
+<script>self.__next_f.push([1, "\"],\"name\":\"\",\"async\":false}\na:I{\"id\":\"99\",\"chunks\":[\"272:static/chunks/webpack-6c947d1d95e21e43.js\",\"667:static/chunks/2443530c-354cefd59ec03fee.js\",\"139:static/chunks/139-9b902e091d519aa7.js\"],\"name\":\"\",\"async\":false}\nb:I{\"id\":\"414\",\"chunks\":[\"271:static/chunks/271-9580839486189aa0.js\",\"414:static/chunks/414-3b9cc46889c2058d.js\",\"253:static/chunks/253-2faf092886f731c7.js\",\"321:static/chunks/app/(other)/tos/layout-f0ae5a3ca52f207e.js\"],\"name\":\"\",\"async\":false}\nc:I{\"id\":\"2011\",\"chunks\":[\"271:static/chunks/27"])</script>
+<script>self.__next_f.push([1, "1-9580839486189aa0.js\",\"414:static/chunks/414-3b9cc46889c2058d.js\",\"253:static/chunks/253-2faf092886f731c7.js\",\"321:static/chunks/app/(other)/tos/layout-f0ae5a3ca52f207e.js\"],\"name\":\"\",\"async\":false}\nd:I{\"id\":\"6778\",\"chunks\":[\"271:static/chunks/271-9580839486189aa0.js\",\"414:static/chunks/414-3b9cc46889c2058d.js\",\"253:static/chunks/253-2faf092886f731c7.js\",\"321:static/chunks/app/(other)/tos/layout-f0ae5a3ca52f207e.js\"],\"name\":\"\",\"async\":false}\ne:I{\"id\":\"9611\",\"chunks\":[\"744:static/chunks/de95f1c2-d79fc6ea636"])</script>
+<script>self.__next_f.push([1, "6b910.js\",\"271:static/chunks/271-9580839486189aa0.js\",\"414:static/chunks/414-3b9cc46889c2058d.js\",\"253:static/chunks/253-2faf092886f731c7.js\",\"919:static/chunks/919-0112c2013852beab.js\",\"471:static/chunks/471-aa8c2160c0475cc4.js\",\"772:static/chunks/app/(default)/page-61eb51522b416922.js\"],\"name\":\"AppButton\",\"async\":false}\nf:I{\"id\":\"8433\",\"chunks\":[\"744:static/chunks/de95f1c2-d79fc6ea6366b910.js\",\"271:static/chunks/271-9580839486189aa0.js\",\"414:static/chunks/414-3b9cc46889c2058d.js\",\"253:static/chunks/253-2f"])</script>
+<script>self.__next_f.push([1, "af092886f731c7.js\",\"919:static/chunks/919-0112c2013852beab.js\",\"471:static/chunks/471-aa8c2160c0475cc4.js\",\"772:static/chunks/app/(default)/page-61eb51522b416922.js\"],\"name\":\"\",\"async\":false}\n10:I{\"id\":\"1243\",\"chunks\":[\"744:static/chunks/de95f1c2-d79fc6ea6366b910.js\",\"271:static/chunks/271-9580839486189aa0.js\",\"919:static/chunks/919-0112c2013852beab.js\",\"933:static/chunks/933-438d67760927e495.js\",\"979:static/chunks/app/pricing/page-4a2745b6db85d2b6.js\"],\"name\":\"FAQ\",\"async\":false}\n"])</script>
+<script>self.__next_f.push([1, "3:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/95a342299e7d323f.css\",\"precedence\":\"next\"}]],[\"$\",\"$L4\",null,{\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"(default)\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[\"$L5\",[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\"}]],\"globalErrorComponent\":\"$6\",\"notFound\":[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"dark\",\"children\":[[\"$\",\"body\",null,{\"className\":\"min-h-screen bg-background font-sans antialiased __variable_cc7fef\",\"children\":[[\"$undefined\",[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]]],[\"$\",\"$L7\",null,{}]]}],[\"$\",\"$L8\",null,{\"defer\":true,\"src\":\"https://umami.diffusion.studio/script.js\",\"data-website-id\":\"518d88f7-2753-4ece-bcff-a795016e114a\"}]]}],\"asNotFound\":false,\"children\":[[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"dark\",\"children\":[[\"$\",\"body\",null,{\"className\":\"min-h-screen bg-background font-sans antialiased __variable_cc7fef\",\"children\":[[\"$\",\"$L9\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"template\":[\"$\",\"$La\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"asNotFound\":false,\"childProp\":{\"current\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col min-h-screen overflow-hidden\",\"children\":[[[\"$\",\"header\",null,{\"className\":\"w-full safearea absolute inset-x-0 top-6 hidden md:flex justify-center z-50\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-full flex justify-between items-center flex-row max-w-6xl\",\"children\":[[\"$\",\"$Lb\",null,{\"className\":\"shrink-0 flex items-center gap-2\",\"href\":\"/#hero\",\"children\":[[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/logo-icon.bc82829f.png\",\"height\":108,\"width\":108,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAUVBMVEX2//77+vr////4+vnt9vV8JC35+/tMaXHn5ubd29vu7Ozy9PRnGyOVdnmXJC+FcXKbcHTz8/PS2dja19eodHmiMj3Y4N+IKjOOcHNtLDPZ5+aN9rrQAAAAEnRSTlP1tbGx9/7sAC4utez6/vr+/rN0UNB2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAQ0lEQVR4nAXBCRaAIAgFwO8KqGUP3Or+B20GJCXGIgSp9nStgmBp7mYBOO/SNCJw5qdzAN7unZp6cF7j0swgdoBj+gFuNQLu95XBpQAAAABJRU5ErkJggg==\",\"blurWidth\":8,\"blurHeight\":8},\"priority\":true,\"alt\":\"Fusion Lab Logo\",\"className\":\"h-8 w-8\"}],[\"$\",\"h5\",null,{\"className\":\"text-sm font-medium text-white\",\"children\":\"Fusion Lab\"}]]}],[\"$\",\"nav\",null,{\"className\":\"flex grow\",\"children\":[\"$\",\"ul\",null,{\"className\":\"flex grow justify-end flex-wrap items-center\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"className\":\"font-medium text-sm\",\"href\":\"/#features\",\"children\":\"Features\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"className\":\"font-medium text-sm ml-10\",\"href\":\"/#faq\",\"children\":\"FAQ\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"className\":\"font-medium text-sm ml-10\",\"href\":\"/pricing\",\"children\":\"Pricing\"}]}],[\"$\",\"li\",null,{\"className\":\"ml-6\",\"children\":[\"$\",\"$Lb\",null,{\"className\":\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground px-4 py-2 h-9\",\"target\":\"_blank\",\"href\":\"https://discord.gg/zPQJrNGuFB\",\"children\":\"Join Discord\"}]}],[\"$\",\"li\",null,{\"className\":\"ml-2\",\"children\":[\"$\",\"a\",null,{\"className\":\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 h-9\",\"href\":\"https://app.diffusion.studio\",\"children\":\"Web Client\"}]}]]}]}]]}]}],[\"$\",\"$Ld\",null,{}]],[\"$\",\"main\",null,{\"className\":\"grow\",\"children\":[\"$\",\"$L9\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(default)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"template\":[\"$\",\"$La\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"asNotFound\":false,\"childProp\":{\"current\":[[[\"$\",\"section\",null,{\"className\":\"w-full relative\",\"id\":\"hero\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-x-0 bottom-0 flex items-center justify-center opacity-70\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/20 to-[#E0E0E0]/0 from-10% to-60%\"}]}],[\"$\",\"div\",null,{\"className\":\"safearea w-full flex-col flex pt-44 pb-24 items-center\",\"children\":[[\"$\",\"$Lb\",null,{\"className\":\"inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium\",\"href\":\"https://github.com/diffusionstudio/core\",\"target\":\"_blank\",\"children\":[[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":1.5,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-blocks h-4 w-4 mr-2\",\"children\":[[\"$\",\"rect\",\"6d4xhi\",{\"width\":\"7\",\"height\":\"7\",\"x\":\"14\",\"y\":\"3\",\"rx\":\"1\"}],[\"$\",\"path\",\"1fpvtg\",{\"d\":\"M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3\"}],\"$undefined\"]}],[\"$\",\"span\",null,{\"children\":\"NEW! Edit videos with code\"}],[\"$\",\"svg\",null,{\"width\":\"15\",\"height\":\"15\",\"viewBox\":\"0 0 15 15\",\"fill\":\"none\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"className\":\"ml-2\",\"children\":[\"$\",\"path\",null,{\"d\":\"M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z\",\"fill\":\"currentColor\",\"fillRule\":\"evenodd\",\"clipRule\":\"evenodd\"}]}]]}],[\"$\",\"h1\",null,{\"className\":\"mt-6 text-5xl sm:text-7xl max-w-sm sm:max-w-3xl font-semibold text-center tracking-tight inline-block text-foreground\",\"children\":\"Automate your video editing workflows\"}],[\"$\",\"span\",null,{\"className\":\"mt-4 text-center text-lg sm:text-xl text-gray-300 max-w-md sm:max-w-lg\",\"children\":\"The most efficient way to create, edit and manage short-form content at scale.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-row gap-4 mt-9 z-40\",\"children\":[[\"$\",\"$Le\",null,{}],[\"$\",\"div\",null,{\"className\":\"relative\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute -z-10 -inset-12 -rotate-[25deg] rounded-full bg-zinc-500 blur-[60px] opacity-10\"}],[\"$\",\"$Lb\",null,{\"href\":\"https://www.youtube.com/watch?v=MThspMqs4ew\u0026list=PLdm699WiVGK-xLmH8-OQCkLZLVGvbODTF\u0026index=1\",\"className\":\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-5 z-10\",\"id\":\"watch-demo\",\"data-umami-event\":\"Watch demo\",\"target\":\"_blank\",\"children\":[\"Watch Demo\",[\"$\",\"svg\",null,{\"width\":\"15\",\"height\":\"15\",\"viewBox\":\"0 0 15 15\",\"fill\":\"none\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"className\":\"h-4 w-4 ml-2\",\"children\":[\"$\",\"path\",null,{\"d\":\"M4.76447 3.12199C5.63151 3.04859 6.56082 3 7.5 3C8.43918 3 9.36849 3.04859 10.2355 3.12199C11.2796 3.21037 11.9553 3.27008 12.472 3.39203C12.9425 3.50304 13.2048 3.64976 13.4306 3.88086C13.4553 3.90618 13.4902 3.94414 13.5133 3.97092C13.7126 4.20149 13.8435 4.4887 13.918 5.03283C13.9978 5.6156 14 6.37644 14 7.52493C14 8.66026 13.9978 9.41019 13.9181 9.98538C13.8439 10.5206 13.7137 10.8061 13.5125 11.0387C13.4896 11.0651 13.4541 11.1038 13.4296 11.1287C13.2009 11.3625 12.9406 11.5076 12.4818 11.6164C11.9752 11.7365 11.3143 11.7942 10.2878 11.8797C9.41948 11.9521 8.47566 12 7.5 12C6.52434 12 5.58052 11.9521 4.7122 11.8797C3.68572 11.7942 3.02477 11.7365 2.51816 11.6164C2.05936 11.5076 1.7991 11.3625 1.57037 11.1287C1.54593 11.1038 1.51035 11.0651 1.48748 11.0387C1.28628 10.8061 1.15612 10.5206 1.08193 9.98538C1.00221 9.41019 1 8.66026 1 7.52493C1 6.37644 1.00216 5.6156 1.082 5.03283C1.15654 4.4887 1.28744 4.20149 1.48666 3.97092C1.5098 3.94414 1.54468 3.90618 1.56942 3.88086C1.7952 3.64976 2.05752 3.50304 2.52796 3.39203C3.04473 3.27008 3.7204 3.21037 4.76447 3.12199ZM0 7.52493C0 5.28296 0 4.16198 0.729985 3.31713C0.766457 3.27491 0.815139 3.22194 0.854123 3.18204C1.63439 2.38339 2.64963 2.29744 4.68012 2.12555C5.56923 2.05028 6.52724 2 7.5 2C8.47276 2 9.43077 2.05028 10.3199 2.12555C12.3504 2.29744 13.3656 2.38339 14.1459 3.18204C14.1849 3.22194 14.2335 3.27491 14.27 3.31713C15 4.16198 15 5.28296 15 7.52493C15 9.74012 15 10.8477 14.2688 11.6929C14.2326 11.7348 14.1832 11.7885 14.1444 11.8281C13.3629 12.6269 12.3655 12.71 10.3709 12.8763C9.47971 12.9505 8.50782 13 7.5 13C6.49218 13 5.52028 12.9505 4.62915 12.8763C2.63446 12.71 1.63712 12.6269 0.855558 11.8281C0.816844 11.7885 0.767442 11.7348 0.731221 11.6929C0 10.8477 0 9.74012 0 7.52493ZM5.25 5.38264C5.25 5.20225 5.43522 5.08124 5.60041 5.15369L10.428 7.27105C10.6274 7.35853 10.6274 7.64147 10.428 7.72895L5.60041 9.84631C5.43522 9.91876 5.25 9.79775 5.25 9.61736V5.38264Z\",\"fill\":\"currentColor\",\"fillRule\":\"evenodd\",\"clipRule\":\"evenodd\"}]}]]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"overflow-hidden pb-24 w-full flex justify-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"h-[43vw] min-h-[320px] max-h-[600px] aspect-[2947/1144] relative\",\"children\":[\"$\",\"$Lf\",null,{}]}]}]]}],[\"$\",\"div\",null,{\"className\":\"safearea w-full flex flex-col items-center\",\"children\":[[\"$\",\"h4\",null,{\"className\":\"section-title-margin text-center text-lg sm:text-2xl font-semibold\",\"children\":\"Our users get billions of views with Fusion Lab\"}],[\"$\",\"span\",null,{\"className\":\"sm:text-xl text-gray-300 mt-1 sm:mt-2\",\"children\":[\"Results from\",\" \",[\"$\",\"$Lb\",null,{\"className\":\"font-semibold text-blue-500\",\"target\":\"_blank\",\"href\":\"https://www.tiktok.com/@pinselscience\",\"children\":\"@pinselscience\"}]]}],[\"$\",\"div\",null,{\"className\":\"w-full max-w-3xl grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 mt-10 gap-2 sm:gap-3 relative\",\"children\":[[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-1.949517f7.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAGFBMVEU0QVQYHSUsNzMaKzMdMj0jJSlDTlwvOjxdX7QJAAAAA3RSTlP8+/gChgwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIElEQVR4nGNgYmFhZmZmZWRgZwCxGFkZGNjYmJmZmZkABD0AT5AFWtAAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-2.4768206e.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAGFBMVEVWUUtcVEx4a16diG9jXlhMSEJ9cmWNf2smIcA2AAAABHRSTlP++/z2gGxipwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAB9JREFUeJwFwYEBADAIgzDqqP7/8RJml+49VIgD2jb5BKUAUKsXjGQAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-3.30eca5f7.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAFVBMVEVfe5ggNkstQldQa4hCWXA+VW42UWy1krbHAAAABHRSTlP+/fz2hOEeFQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAB5JREFUeJxjYIAAZgYWFhYWVlY2NgYmFhYmRkZGRgACnwA6dmqrlQAAAABJRU5ErkJggg==\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-4.9f524710.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAElBMVEUvLTNHQkBcV1p0Zl0TExsfICapncFBAAAABHRSTlP+/fb4mbbbmAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAB1JREFUeJwFwQEBADAMgzD6gX/LT7g0eEwLBqC2DwOPAD6YKaz3AAAAAElFTkSuQmCC\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-5.3276ea98.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAHlBMVEVVWl4kJyhHS1B9g4YMDxEwMjQbHiA5PTxrbnFeZWmV1xXtAAAABHRSTlP9/fz2llSx+wAAAAlwSFlzAAALEwAACxMBAJqcGAAAACFJREFUeJwFwYEBACAMwrAygen/D5vAW9schmqbyyRKrQ8FHgBgUBQ4jQAAAABJRU5ErkJggg==\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\",\"className\":\"hidden md:inline\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-6.0639a0ab.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAGFBMVEVsWVZUSEd0X1p/d3tPQ0ReUFBwZWlFOzxkLCnlAAAABHRSTlP8+P7+FM7+xQAAAAlwSFlzAAALEwAACxMBAJqcGAAAACBJREFUeJxjYGBgYGFlYmBgYGVlY2NnYWFhYGRlBjEYAQPNAFR4Ih+dAAAAAElFTkSuQmCC\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\",\"className\":\"hidden md:inline\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-7.0f61c4d4.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAG1BMVEV3bmqEenajmI/Ct65+d3WOhX+cjYOUi4Srn5YA+GwyAAAABXRSTlP9/fz7/hdQMf4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAhSURBVHicBcGBAQAwCMKwogP5/+IlTJtkF41958I9sPQBBisAZY7nC5kAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\",\"className\":\"hidden md:inline\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-8.907bfa6a.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAHlBMVEU5Q1tCTWZGVHAMDhYpMDdNW3kfIyogJy8oLkE0O0xGYqhsAAAABHRSTlP9/ff+e3vgAgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAB5JREFUeJxjYGJlYGHhYGViYGRgYWPnYGCEMJg5GAAEiwBXF9Pz1wAAAABJRU5ErkJggg==\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-9.961b8890.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAElBMVEUtQVEhPEkbJScxP0ocLDQ8TVWmxRj6AAAAA3RSTlP9/v0OWWbPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAHklEQVR4nBXBgQ0AAAjCsA3x/5eNLao8tcDAbtLmAAFsACdjLUK7AAAAAElFTkSuQmCC\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\",\"className\":\"hidden sm:inline\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-10.ff2161bf.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAKlBMVEWJb1UwKSFGOjI0MC6amJBKREGBalGUi4N9b2JuWkZRS0ZcV1NZTURnZWT1LDLGAAAABXRSTlP7/Pf4/gfUHxkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAjSURBVHicY2DkZeFkY2NgYGBk5eFg52DnZGBm5WLl5uJiAgAHggCZgMmNAQAAAABJRU5ErkJggg==\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-11.87ac5b5c.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAG1BMVEUQFh8hHCYuPEQfNUEfDRgLCRYaCRQmLDcZKDQ2fxmIAAAABXRSTlP+/vz++NZRtbAAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAgSURBVHicBcGBAQAgCMOwdjrw/4tNuDPtSVDlAW6g5QMEEwBCip0YYgAAAABJRU5ErkJggg==\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\",\"className\":\"hidden sm:inline\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-12.31b8ad6f.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAJ1BMVEU0MTJFSE5VWGJLQkBCNjFSTVAdHiAVEhgsIicqExpfPERQKylvZWIjmBVLAAAABXRSTlP8+/v8/kVVx9AAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAjSURBVHicY2DmYeHmYmViYmBgZebkYGdjZGBgZWVnY+NgBAAHJwB/irbXKgAAAABJRU5ErkJggg==\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-13.edc065c8.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAJFBMVEU9Ny0WGCEsKzpdY3k4O0xhcZhFQ0FufaEhJTMMDA8nKjpSWniyInXPAAAABHRSTlP9/fb+YmDRQwAAAAlwSFlzAAALEwAACxMBAJqcGAAAACJJREFUeJwFwYkBACAIA7Erlkfdf18S4HTmD8C230CVpKsFBOAAXfVNRnwAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\",\"className\":\"hidden sm:inline\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-14.7bbce074.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAALVBMVEWntcVjU09HU1hZam9rc01HRDVYaV02PTBFU2ZkenxVV0RXZkKKl5JRUS6ImKF/nNR3AAAABnRSTlP8/Pj3/v6iUSuaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAI0lEQVR4nGNgZGfl5WFgYGBgZGfnYuPk5GNgYmPhZuPgYAYAB3oAlpDxGG4AAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/thumbnail-15.127a9f8b.png\",\"height\":90,\"width\":206,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAMAAACZFr56AAAAHlBMVEUNERspLDJOUFkxPVNqaGkiKDUtMkNESVEjKz8bICiIGg49AAAABXRSTlP+/fj+9iRVn4UAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAhSURBVHicBcGBAQAgDMKwog7Y/w+bcHyTzsMdLQg1FuwHBhMAaexS0ZsAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":3},\"width\":\"206\",\"height\":\"90\",\"alt\":\"Thumbnail\"}],[\"$\",\"div\",null,{\"className\":\"absolute inset-y-0 -inset-x-2 sm:inset-x-0 bg-gradient-to-r from-gray-950 via-gray-950/0 to-gray-950\"}]]}]]}],[\"$\",\"section\",null,{\"className\":\"section-padding w-full flex flex-col items-center relative\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-x-0 bottom-0 flex items-center justify-center opacity-70\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/20 to-[#E0E0E0]/0 from-10% to-60%\"}]}],[\"$\",\"div\",null,{\"className\":\"container relative flex items-center flex-col\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute -inset-44 -z-10 rotate-12 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-50/20 to-gray-50/0 to-60% opacity-50\"}],[[\"$\",\"h2\",null,{\"className\":\"text-4xl sm:text-6xl font-semibold text-center tracking-tighter max-w-2xl\",\"children\":[[[\"$\",\"em\",null,{\"className\":\"text-gray-400 not-italic\",\"children\":\"Less effort.\"}],[\"$\",\"br\",null,{}]],\"More consistent.\"]}],[\"$\",\"span\",null,{\"className\":\"text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6\",\"children\":\"Don't waste time recreating your edits for every video. Set up editing pipelines to automate your format at scale.\"}]]]}],[\"$\",\"div\",null,{\"className\":\"section-title-margin max-w-5xl w-full gap-y-14 sm:gap-y-20 md:gap-y-32 grid grid-cols-[1fr_130px] sm:grid-cols-[1fr_1fr]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sm:aspect-square w-full flex flex-col justify-center h-full pr-8 sm:pr-9 md:pr-12 lg:pr-24\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"48\",\"height\":\"48\",\"viewBox\":\"0 0 48 48\",\"fill\":\"none\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M13.5 30.1538V20.9667C13.5 18.3531 13.5 17.0463 14.0086 16.048C14.456 15.17 15.17 14.456 16.048 14.0086C17.0463 13.5 18.3531 13.5 20.9667 13.5H27.0333C29.6469 13.5 30.9537 13.5 31.952 14.0086C32.83 14.456 33.544 15.17 33.9914 16.048C34.5 17.0463 34.5 18.3531 34.5 20.9667V22.3667C34.5 24.9802 34.5 26.287 33.9914 27.2853C33.544 28.1634 32.83 28.8773 31.952 29.3247C30.9537 29.8333 29.6469 29.8333 27.0333 29.8333H22.0857C21.5009 29.8333 21.2085 29.8333 20.9342 29.9008C20.691 29.9605 20.459 30.0591 20.2471 30.1926C20.008 30.3432 19.805 30.5536 19.399 30.9745L18.315 32.098C16.8099 33.6579 16.0574 34.4379 15.4092 34.4971C14.8469 34.5484 14.2944 34.3254 13.9254 33.898C13.5 33.4053 13.5 32.3215 13.5 30.1538Z\",\"fill\":\"url(#paint0_radial_2860_9519)\"}],[\"$\",\"rect\",null,{\"x\":\"0.5\",\"y\":\"0.5\",\"width\":\"47\",\"height\":\"47\",\"rx\":\"11.5\",\"stroke\":\"url(#paint1_linear_2860_9519)\"}],[\"$\",\"defs\",null,{\"children\":[[\"$\",\"radialGradient\",null,{\"id\":\"paint0_radial_2860_9519\",\"cx\":\"0\",\"cy\":\"0\",\"r\":\"1\",\"gradientUnits\":\"userSpaceOnUse\",\"gradientTransform\":\"translate(24 14) rotate(90) scale(35.5 110.324)\",\"children\":[[\"$\",\"stop\",null,{\"stopColor\":\"#D4D4D8\"}],[\"$\",\"stop\",null,{\"offset\":\"1\",\"stopColor\":\"#D4D4D8\",\"stopOpacity\":\"0\"}]]}],[\"$\",\"linearGradient\",null,{\"id\":\"paint1_linear_2860_9519\",\"x1\":\"24\",\"y1\":\"-7.5\",\"x2\":\"24\",\"y2\":\"49.5\",\"gradientUnits\":\"userSpaceOnUse\",\"children\":[[\"$\",\"stop\",null,{\"stopColor\":\"white\",\"stopOpacity\":\"0.93\"}],[\"$\",\"stop\",null,{\"offset\":\"0.525672\",\"stopColor\":\"white\",\"stopOpacity\":\"0.320481\"}],[\"$\",\"stop\",null,{\"offset\":\"1\",\"stopColor\":\"white\",\"stopOpacity\":\"0\"}]]}]]}]]}],[\"$\",\"h3\",null,{\"className\":\"font-semibold text-[22px] md:text-[40px] leading-tight tracking-tighter mt-3 md:mt-6 max-w-[200px] md:max-w-[320px]\",\"children\":\"Chat based editing interface\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-300 text-lg hidden sm:block sm:text-base md:text-xl mt-4 lg:mt-10\",\"children\":\"Fusion Lab effortlessly adapts to your personal workflow with its revolutionary, chat-based editing interface.\"}]]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/chat.d83b21f0.png\",\"height\":1200,\"width\":1200,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAJ1BMVEUHBwcTExMGBgYHBwcCAgIAAAAGBgYHBwcNDQ0IBwgMDAwVFRUiIyS2fCJYAAAAC3RSTlPTDSPPLjSq2Or//l7rLiwAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAwSURBVHicPclZCgAwCAPR2E2Muf95i1L68jMQ2AM7PgsGolUw2ZGSFFgI9rWRrP24LtoBowUfyaYAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":8},\"alt\":\"Chat Ui Component\",\"className\":\"w-full h-full\"}],\"className\":\"block aspect-square bg-gray-800 border-2 border-gray-50/5 rounded-2xl sm:rounded-3xl relative overflow-hidden\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-300 text-lg sm:hidden -mt-6 col-span-2\",\"children\":\"Fusion Lab effortlessly adapts to your personal workflow with its revolutionary, chat-based editing interface.\"}],[\"$\",\"div\",null,{\"className\":\"sm:aspect-square w-full flex flex-col justify-center h-full pr-8 sm:pl-9 md:pl-12 lg:pl-24 sm:col-start-2 sm:row-start-2\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"48\",\"height\":\"48\",\"viewBox\":\"0 0 48 48\",\"fill\":\"none\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"children\":[[\"$\",\"rect\",null,{\"x\":\"0.5\",\"y\":\"0.5\",\"width\":\"47\",\"height\":\"47\",\"rx\":\"11.5\",\"stroke\":\"url(#paint0_linear_2860_9520)\"}],[\"$\",\"path\",null,{\"d\":\"M15.2612 25.3768L13.5345 15.4484C13.5115 15.3164 13.5 15.1826 13.5 15.0486V14.6667C13.5 14.0223 14.0223 13.5 14.6667 13.5H15.0486C15.1826 13.5 15.3164 13.5115 15.4484 13.5345L25.3768 15.2612C27.4149 15.6157 29.1128 17.0231 29.8392 18.9601L32.1667 25.1667L25.1667 32.1667L18.9601 29.8392C17.0231 29.1129 15.6156 27.4149 15.2612 25.3768Z\",\"fill\":\"url(#paint1_radial_2860_9520)\",\"fillOpacity\":\"0.4\"}],[\"$\",\"path\",null,{\"fillRule\":\"evenodd\",\"clipRule\":\"evenodd\",\"d\":\"M13.8417 13.8417C14.2973 13.3861 15.036 13.3861 15.4916 13.8417L22.2289 20.579C22.4217 20.5275 22.6243 20.5 22.8333 20.5C24.122 20.5 25.1667 21.5447 25.1667 22.8333C25.1667 24.122 24.122 25.1667 22.8333 25.1667C21.5447 25.1667 20.5 24.122 20.5 22.8333C20.5 22.6243 20.5275 22.4217 20.579 22.2289L13.8417 15.4916C13.3861 15.036 13.3861 14.2973 13.8417 13.8417ZM25.167 32.167L26.8187 33.8187C27.73 34.73 29.2074 34.73 30.1186 33.8187L33.8187 30.1186C34.73 29.2074 34.73 27.73 33.8187 26.8187L32.167 25.167L25.167 32.167Z\",\"fill\":\"url(#paint2_radial_2860_9520)\"}],[\"$\",\"defs\",null,{\"children\":[[\"$\",\"linearGradient\",null,{\"id\":\"paint0_linear_2860_9520\",\"x1\":\"24\",\"y1\":\"-7.5\",\"x2\":\"24\",\"y2\":\"49.5\",\"gradientUnits\":\"userSpaceOnUse\",\"children\":[[\"$\",\"stop\",null,{\"stopColor\":\"white\",\"stopOpacity\":\"0.93\"}],[\"$\",\"stop\",null,{\"offset\":\"0.525672\",\"stopColor\":\"white\",\"stopOpacity\":\"0.320481\"}],[\"$\",\"stop\",null,{\"offset\":\"1\",\"stopColor\":\"white\",\"stopOpacity\":\"0\"}]]}],[\"$\",\"radialGradient\",null,{\"id\":\"paint1_radial_2860_9520\",\"cx\":\"0\",\"cy\":\"0\",\"r\":\"1\",\"gradientUnits\":\"userSpaceOnUse\",\"gradientTransform\":\"translate(20.166 18.8328) rotate(63.7052) scale(42.1336 130.966)\",\"children\":[[\"$\",\"stop\",null,{\"stopColor\":\"white\"}],[\"$\",\"stop\",null,{\"offset\":\"1\",\"stopColor\":\"#D4D4D8\",\"stopOpacity\":\"0\"}]]}],[\"$\",\"radialGradient\",null,{\"id\":\"paint2_radial_2860_9520\",\"cx\":\"0\",\"cy\":\"0\",\"r\":\"1\",\"gradientUnits\":\"userSpaceOnUse\",\"gradientTransform\":\"translate(21 19.5) rotate(63.7052) scale(47.4052 147.352)\",\"children\":[[\"$\",\"stop\",null,{\"stopColor\":\"white\"}],[\"$\",\"stop\",null,{\"offset\":\"1\",\"stopColor\":\"#D4D4D8\",\"stopOpacity\":\"0\"}]]}]]}]]}],[\"$\",\"h3\",null,{\"className\":\"font-semibold text-[22px] md:text-[40px] leading-tight tracking-tighter mt-3 md:mt-6 max-w-[200px] md:max-w-[320px]\",\"children\":\"Versatile style personalization\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-300 text-lg hidden sm:block sm:text-base md:text-xl mt-4 lg:mt-10\",\"children\":\"Swiftly transition within the innovative Fusion Lab user interface to a modern editing view for precise adjustments, similar to Adobe Premiere or Cap Cut.\"}]]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/editor.3addf93f.png\",\"height\":1200,\"width\":1200,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAP1BMVEUYGh4uQVEeHigLBwcoMiqZvMw7S1cXMzonHisWFx0RGh0XFRcoKi5IaHwZGR5AVDwjJS9md2UyPS81WmNlnsZaICpOAAAAC3RSTlNX/hlE/v79kP5ikRoIUscAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAA8SURBVHicJcZRFkAwDATApUVis6m27n9WD/M1wG9FBHUvBKKyb/ubyNYHHZkcrabDaGF2OTQlKRzH5ywPSzoCVA6bmfIAAAAASUVORK5CYII=\",\"blurWidth\":8,\"blurHeight\":8},\"alt\":\"Editor Ui Component\",\"className\":\"w-full h-full\"}],\"className\":\"block aspect-square bg-gray-800 border-2 border-gray-50/5 rounded-2xl sm:rounded-3xl relative overflow-hidden\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-300 text-lg sm:hidden -mt-6 col-span-2\",\"children\":\"Swiftly transition within the innovative Fusion Lab user interface to a modern editing view for precise adjustments, similar to Adobe Premiere or Cap Cut.\"}],[\"$\",\"div\",null,{\"className\":\"sm:aspect-square w-full flex flex-col justify-center h-full pr-8 sm:pr-9 md:pr-12 lg:pr-24\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"48\",\"height\":\"48\",\"viewBox\":\"0 0 48 48\",\"fill\":\"none\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"children\":[[\"$\",\"rect\",null,{\"x\":\"0.5\",\"y\":\"0.5\",\"width\":\"47\",\"height\":\"47\",\"rx\":\"11.5\",\"stroke\":\"url(#paint0_linear_2860_9531)\"}],[\"$\",\"path\",null,{\"fillRule\":\"evenodd\",\"clipRule\":\"evenodd\",\"d\":\"M26 12C27.1046 12 28 12.8581 28 13.9167C28 16.0338 29.7909 17.7501 32 17.7501C33.1046 17.7501 34 18.6082 34 19.6668C34 20.7254 33.1046 21.5835 32 21.5835C30.5429 21.5835 29.1767 21.2101 28 20.5578V28.2916C28 28.2917 28 28.2918 28 28.2919C27.9998 31.9967 24.8659 35 21 35C17.134 35 14 31.9965 14 28.2916C14 25.0438 16.4062 22.339 19.6021 21.7173C20.6846 21.5067 21.7403 22.177 21.96 23.2144C22.1798 24.2518 21.4804 25.2635 20.3979 25.474C19.0294 25.7403 18 26.9029 18 28.2916C18 29.8794 19.3431 31.1666 21 31.1666C22.6567 31.1666 23.9998 29.8796 24 28.2919C24 28.2918 24 28.2917 24 28.2916V13.9167C24 12.8581 24.8954 12 26 12Z\",\"fill\":\"url(#paint1_radial_2860_9531)\"}],[\"$\",\"defs\",null,{\"children\":[[\"$\",\"linearGradient\",null,{\"id\":\"paint0_linear_2860_9531\",\"x1\":\"24\",\"y1\":\"-7.5\",\"x2\":\"24\",\"y2\":\"49.5\",\"gradientUnits\":\"userSpaceOnUse\",\"children\":[[\"$\",\"stop\",null,{\"stopColor\":\"white\",\"stopOpacity\":\"0.93\"}],[\"$\",\"stop\",null,{\"offset\":\"0.525672\",\"stopColor\":\"white\",\"stopOpacity\":\"0.320481\"}],[\"$\",\"stop\",null,{\"offset\":\"1\",\"stopColor\":\"white\",\"stopOpacity\":\"0\"}]]}],[\"$\",\"radialGradient\",null,{\"id\":\"paint1_radial_2860_9531\",\"cx\":\"0\",\"cy\":\"0\",\"r\":\"1\",\"gradientUnits\":\"userSpaceOnUse\",\"gradientTransform\":\"translate(24 12.5475) rotate(80.9245) scale(47.5477 128.518)\",\"children\":[[\"$\",\"stop\",null,{\"stopColor\":\"#F0F0F0\"}],[\"$\",\"stop\",null,{\"offset\":\"1\",\"stopColor\":\"#D4D4D8\",\"stopOpacity\":\"0\"}]]}]]}]]}],[\"$\",\"h3\",null,{\"className\":\"font-semibold text-[22px] md:text-[40px] leading-tight tracking-tighter mt-3 md:mt-6 max-w-[200px] md:max-w-[320px]\",\"children\":\"Social media ui simulation\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-300 text-lg hidden sm:block sm:text-base md:text-xl mt-4 lg:mt-10\",\"children\":\"Gain insight into your editing's look and feel, by previewing your video in a simulator before wasting time on rendering and uploading it to social media.\"}]]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"$Lc\",null,{\"src\":{\"src\":\"/_next/static/media/simulator.f0c5ad33.png\",\"height\":1200,\"width\":1200,\"blurDataURL\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAUVBMVEUDBwceR2k/Pz8fHx8ABAQUFRYcHB4aFA4+PDYkJSUAAAAAAAAHCApYTEIeGxYVHCJPXWkRDxE4XHkNDQ1SVlNwZVw7SlFccX2NgG46MCx0S0OcnPqbAAAAFnRSTlMa/QQIEW1kX/79JyJF/lb7/ob+hvz8fcKR6gAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAEFJREFUeJwFwQUCwCAMBLArlAo+Y/L/hy5BQNqOhIBYx1peI7g70egM1n3epAzoas9UAGrvdylQxMxOKcjJ3JvkH1T4Am6horsxAAAAAElFTkSuQmCC\",\"blurWidth\":8,\"blurHeight\":8},\"alt\":\"Editor Ui Component\",\"className\":\"w-full h-full\"}],\"className\":\"block aspect-square bg-gray-800 border-2 border-gray-50/5 rounded-2xl sm:rounded-3xl relative overflow-hidden\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-300 text-lg sm:hidden -mt-6 col-span-2\",\"children\":\"Gain insight into your editing's look and feel, by previewing your video in a simulator before wasting time on rendering and uploading it to social media.\"}]]}]]}],[\"$\",\"section\",null,{\"className\":\"section-padding w-full flex flex-col items-center relative\",\"id\":\"features\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-x-0 bottom-0 flex items-center justify-center opacity-70\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/20 to-[#E0E0E0]/0 from-10% to-60%\"}]}],[\"$\",\"div\",null,{\"className\":\"container relative flex items-center flex-col\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-4xl sm:text-6xl font-semibold text-center tracking-tighter max-w-2xl\",\"children\":[[[\"$\",\"em\",null,{\"className\":\"text-gray-400 not-italic\",\"children\":\"Viral edits.\"}],[\"$\",\"br\",null,{}]],\"Completely automated\"]}],[\"$\",\"span\",null,{\"className\":\"text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6\",\"children\":\"Thanks to the latest state-of-the-art machine  learning models, you can have algorithms  do the work for you\"}]]}],[\"$\",\"div\",null,{\"className\":\"section-title-margin max-w-5xl w-full gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3\",\"children\":[[\"$\",\"div\",null,{\"className\":\"bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"32\",\"height\":\"32\",\"viewBox\":\"0 0 32 32\",\"fill\":\"none\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M4 24V16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76516 28 12.8174 28 16V24\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M28 25.3337C28 26.0409 27.719 26.7192 27.219 27.2193C26.7189 27.7194 26.0406 28.0003 25.3333 28.0003H24C23.2928 28.0003 22.6145 27.7194 22.1144 27.2193C21.6143 26.7192 21.3333 26.0409 21.3333 25.3337V21.3337C21.3333 20.6264 21.6143 19.9481 22.1144 19.448C22.6145 18.9479 23.2928 18.667 24 18.667H28V25.3337ZM4 25.3337C4 26.0409 4.28095 26.7192 4.78105 27.2193C5.28115 27.7194 5.95942 28.0003 6.66667 28.0003H8C8.70724 28.0003 9.38552 27.7194 9.88562 27.2193C10.3857 26.7192 10.6667 26.0409 10.6667 25.3337V21.3337C10.6667 20.6264 10.3857 19.9481 9.88562 19.448C9.38552 18.9479 8.70724 18.667 8 18.667H4V25.3337Z\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}]]}],[\"$\",\"span\",null,{\"className\":\"font-semibold mt-4 md:mt-5\",\"children\":\"Text-to-Speech\"}],[\"$\",\"p\",null,{\"className\":\"mt-1 text-gray-400\",\"children\":\"Create high-quality spoken audio with more than 20 voices.\"}]]}],[\"$\",\"div\",null,{\"className\":\"bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"32\",\"height\":\"32\",\"viewBox\":\"0 0 32 32\",\"fill\":\"none\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M16 1.33301C14.9391 1.33301 13.9217 1.75444 13.1716 2.50458C12.4214 3.25473 12 4.27214 12 5.33301V15.9997C12 17.0605 12.4214 18.078 13.1716 18.8281C13.9217 19.5782 14.9391 19.9997 16 19.9997C17.0609 19.9997 18.0783 19.5782 18.8284 18.8281C19.5786 18.078 20 17.0605 20 15.9997V5.33301C20 4.27214 19.5786 3.25473 18.8284 2.50458C18.0783 1.75444 17.0609 1.33301 16 1.33301Z\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M25.3327 13.333V15.9997C25.3327 18.475 24.3494 20.849 22.599 22.5993C20.8487 24.3497 18.4747 25.333 15.9993 25.333C13.524 25.333 11.15 24.3497 9.39969 22.5993C7.64935 20.849 6.66602 18.475 6.66602 15.9997V13.333\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M16 25.333V30.6663\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M10.666 30.667H21.3327\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}]]}],[\"$\",\"span\",null,{\"className\":\"font-semibold mt-4 md:mt-5\",\"children\":\"Speech Recognition\"}],[\"$\",\"p\",null,{\"className\":\"mt-1 text-gray-400\",\"children\":\"Accurately transcribe your videos automatically.\"}]]}],[\"$\",\"div\",null,{\"className\":\"bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"33\",\"height\":\"33\",\"viewBox\":\"0 0 33 33\",\"fill\":\"none\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M6.16016 9.94238V5.94238H27.4935V9.94238\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M12.8271 27.2764H20.8271\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M16.8271 5.94238V27.2757\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}]]}],[\"$\",\"span\",null,{\"className\":\"font-semibold mt-4 md:mt-5\",\"children\":\"Script Generation\"}],[\"$\",\"p\",null,{\"className\":\"mt-1 text-gray-400\",\"children\":\"Generate engaging scripts with a specialised large language model.\"}]]}],[\"$\",\"div\",null,{\"className\":\"bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"32\",\"height\":\"32\",\"viewBox\":\"0 0 32 32\",\"fill\":\"none\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M24 28C26.2091 28 28 26.2091 28 24C28 21.7909 26.2091 20 24 20C21.7909 20 20 21.7909 20 24C20 26.2091 21.7909 28 24 28Z\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M8 28V12C8 15.1826 9.26428 18.2348 11.5147 20.4853C13.7652 22.7357 16.8174 24 20 24\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}]]}],[\"$\",\"span\",null,{\"className\":\"font-semibold mt-4 md:mt-5\",\"children\":\"Project Workflows\"}],[\"$\",\"p\",null,{\"className\":\"mt-1 text-gray-400\",\"children\":\"Supercharge your edits with ready-to-use dedicated workflows.\"}]]}],[\"$\",\"div\",null,{\"className\":\"bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"32\",\"height\":\"32\",\"viewBox\":\"0 0 32 32\",\"fill\":\"none\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M30.6673 8L18.0007 20.6667L11.334 14L1.33398 24\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M22.666 8H30.666V16\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}]]}],[\"$\",\"span\",null,{\"className\":\"font-semibold mt-4 md:mt-5\",\"children\":\"Caption Templates\"}],[\"$\",\"p\",null,{\"className\":\"mt-1 text-gray-400\",\"children\":\"Integrate the latest viral captions themes with a single click.\"}]]}],[\"$\",\"div\",null,{\"className\":\"bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"32\",\"height\":\"32\",\"viewBox\":\"0 0 32 32\",\"fill\":\"none\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M5.33301 12H26.6663\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M5.33301 20H26.6663\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M13.3337 4L10.667 28\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}],[\"$\",\"path\",null,{\"d\":\"M21.3337 4L18.667 28\",\"stroke\":\"#A1A1AA\",\"strokeWidth\":\"2\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\"}]]}],[\"$\",\"span\",null,{\"className\":\"font-semibold mt-4 md:mt-5\",\"children\":\"Automated Hashtags\"}],[\"$\",\"p\",null,{\"className\":\"mt-1 text-gray-400\",\"children\":\"Spend no more time on hashtag optimization, we got your back.\"}]]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"section-padding w-full flex flex-col items-center relative\",\"id\":\"faq\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute -inset-x-52 bottom-0 flex items-center justify-center opacity-60\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/30 to-[#E0E0E0]/0 from-10% to-60%\"}]}],[\"$\",\"div\",null,{\"className\":\"container relative flex items-center flex-col\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-4xl sm:text-6xl font-semibold text-center tracking-tighter max-w-2xl\",\"children\":[\"$undefined\",\"Frequently asked questions\"]}],[\"$\",\"span\",null,{\"className\":\"text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6\",\"children\":\"Interested in DS? Explore our FAQ section for answers  to common questions about our studio application.\"}]]}],[\"$\",\"div\",null,{\"className\":\"mt-20 sm:mt-24 z-30\",\"children\":[\"$\",\"$L10\",null,{\"items\":[{\"question\":\"Is Fusion Lab free to use?\",\"answer\":\"Yes it is. You can get started for free without the need for a credit card or an account. Just open the web client and enjoy. However, if you exceed a certain usage limit, you will be asked to set up a subscription. The usage cap will be reset every 31 days.\"},{\"question\":\"Can I use Fusion Lab for commercial purposes?\",\"answer\":\"Certainly, users can use the content generated by Fusion Lab for commercial purposes.\"},{\"question\":\"What's the advantage of Fusion Lab over traditional video editing Softwares?\",\"answer\":\"We aim to automate the video editing process as much as possible. This inevitably leads to fewer configuration options than with tools such as Adobe Premiere. But it also allows you to work 100 times more productive.\"},{\"question\":\"What are the supported languages?\",\"answer\":\"Fusion Lab currently supports English. However, it may expand to support other languages in the future.\"},{\"question\":\"Can I use the Fusion Lab for YouTube Videos?\",\"answer\":\"The app is designed for short-form content with an aspect ratio of 9/16 (portrait format). In addition, it was only tested for videos of less than 10 minutes in length, although longer videos are certainly feasible.\"}]}]}]]}],[\"$\",\"section\",null,{\"className\":\"safearea flex flex-col items-center pt-20 pb-12 relative\",\"children\":[\"$\",\"div\",null,{\"className\":\"container p-10 lg:p-6 relative items-center flex flex-col lg:flex-row bg-gray-900 border-gray-800 border rounded-xl lg:rounded-2xl lg:justify-between\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col lg:flex-row items-center gap-5 lg:gap-8\",\"children\":[[\"$\",\"svg\",null,{\"width\":\"56\",\"height\":\"43\",\"viewBox\":\"0 0 56 43\",\"fill\":\"none\",\"children\":[\"$\",\"path\",null,{\"d\":\"M47.4374 3.91782C43.7582 2.25094 39.874 1.06839 35.8842 0.400391C35.3382 1.36622 34.8442 2.35992 34.4042 3.37735C30.1543 2.74361 25.8324 2.74361 21.5825 3.37735C21.1423 2.36003 20.6483 1.36633 20.1025 0.400391C16.1101 1.07403 12.2234 2.25938 8.54046 3.92654C1.22884 14.6314 -0.753228 25.0704 0.237806 35.3612C4.51968 38.4918 9.31231 40.8727 14.4074 42.4004C15.5546 40.8735 16.5698 39.2536 17.4421 37.5579C15.7853 36.9456 14.1861 36.19 12.6632 35.3001C13.064 35.0125 13.456 34.7161 13.8348 34.4284C18.2662 36.4907 23.1029 37.5599 28 37.5599C32.897 37.5599 37.7337 36.4907 42.1651 34.4284C42.5483 34.7379 42.9403 35.0343 43.3368 35.3001C41.8108 36.1915 40.2088 36.9485 38.549 37.5623C39.4202 39.2571 40.4355 40.8757 41.5837 42.4004C46.6831 40.8788 51.4795 38.4991 55.7621 35.3655C56.9249 23.4315 53.7756 13.0884 47.4374 3.91782ZM18.6975 29.0324C15.9358 29.0324 13.6542 26.5523 13.6542 23.5013C13.6542 20.4502 15.8565 17.9483 18.6886 17.9483C21.5208 17.9483 23.7848 20.4502 23.7363 23.5013C23.6879 26.5523 21.512 29.0324 18.6975 29.0324ZM37.3025 29.0324C34.5364 29.0324 32.2636 26.5523 32.2636 23.5013C32.2636 20.4502 34.4659 17.9483 37.3025 17.9483C40.139 17.9483 42.3854 20.4502 42.3369 23.5013C42.2885 26.5523 40.117 29.0324 37.3025 29.0324Z\",\"fill\":\"#E4E4E7\"}]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col text-center lg:text-start\",\"children\":[[\"$\",\"h6\",null,{\"className\":\"text-xl font-medium\",\"children\":\"Join our awesome community\"}],[\"$\",\"p\",null,{\"className\":\"text-gray-400 lg:leading-none mt-2 lg:mt-1\",\"children\":\"Share your work, seek support, stay up to date and network with ds-mates.\"}]]}]]}],[\"$\",\"$Lb\",null,{\"target\":\"_blank\",\"href\":\"https://discord.gg/zPQJrNGuFB\",\"className\":\"inline-flex font-medium h-12 px-5 gap-1 mt-10 lg:mt-0 items-center bg-gray-200 text-gray-950 hover:text-gray-200 hover:bg-transparent border rounded-lg\",\"children\":\"Join our Discord\"}]]}]}]],null],\"segment\":\"__PAGE__\"},\"styles\":[]}]}],[\"$\",\"footer\",null,{\"className\":\"safearea relative w-full overflow-x-hidden flex justify-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"container px-0 py-6 sm:py-8 flex flex-col\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col md:flex-row justify-between w-full mb-14\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col justify-between\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/\",\"children\":[\"$\",\"svg\",null,{\"width\":\"45\",\"height\":\"28\",\"viewBox\":\"0 0 45 28\",\"fill\":\"none\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M44.0904 19.9709C44.0904 22.4163 43.2074 24.3726 41.4412 25.8399C39.7023 27.28 37.4063 28 34.5533 28C31.4558 28 28.8881 27.4158 26.8503 26.2475V20.9898C29.187 22.6744 31.7411 23.5167 34.5126 23.5167C35.7624 23.5167 36.7678 23.2179 37.5286 22.6201C38.2894 21.9951 38.6698 21.1664 38.6698 20.1339C38.6698 19.6448 38.5747 19.2101 38.3845 18.8297C38.1943 18.4493 37.8003 18.0689 37.2025 17.6885C36.6319 17.3081 36.1836 17.0364 35.8575 16.8734C35.5587 16.7103 34.9201 16.4114 33.942 15.9767C33.6703 15.8409 33.4665 15.7458 33.3306 15.6914C32.3253 15.2295 31.5101 14.8219 30.8852 14.4687C30.2603 14.0883 29.581 13.5856 28.8474 12.9607C28.1137 12.3358 27.5567 11.5885 27.1763 10.7191C26.8231 9.84959 26.6465 8.85784 26.6465 7.74381C26.6465 5.40708 27.5024 3.53226 29.2142 2.11936C30.9531 0.706453 33.2491 0 36.1021 0C38.6834 0 40.9114 0.448326 42.7862 1.34498V6.31732C40.7484 5.09461 38.5747 4.48326 36.2651 4.48326C34.9881 4.48326 33.9827 4.76856 33.2491 5.33915C32.5427 5.90975 32.1894 6.64338 32.1894 7.54003C32.1894 8.43668 32.5698 9.18389 33.3306 9.78166C34.1186 10.3523 35.2869 10.9908 36.8357 11.6972C37.9226 12.1863 38.8056 12.6211 39.4849 13.0015C40.1642 13.3547 40.8978 13.8574 41.6858 14.5095C42.5009 15.1616 43.0987 15.9495 43.4791 16.8734C43.8867 17.77 44.0904 18.8025 44.0904 19.9709Z\",\"fill\":\"#52525B\"}],[\"$\",\"path\",null,{\"d\":\"M8.96652 27.6733H0V0.203125H8.96652C13.0694 0.203125 16.425 1.46659 19.0335 3.99352C21.6419 6.52045 22.9461 9.71307 22.9461 13.5714C22.9461 17.7829 21.6827 21.1929 19.1558 23.8014C16.6288 26.3827 13.2324 27.6733 8.96652 27.6733ZM8.80349 4.52336H5.25764V23.3938H8.88501C11.7652 23.3938 13.9525 22.5107 15.4469 20.7446C16.9413 18.9513 17.6885 16.5602 17.6885 13.5714C17.6885 10.9358 16.8869 8.77566 15.2838 7.09104C13.7079 5.37925 11.5478 4.52336 8.80349 4.52336Z\",\"fill\":\"#52525B\"}]]}]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-1 mt-7 md:mt-0\",\"children\":[[\"$\",\"h6\",null,{\"className\":\"text-lg\",\"children\":[\"Made by \",[\"$\",\"em\",null,{\"className\":\"not-italic underline\",\"children\":\"Fusion Lab\"}]]}],[\"$\",\"p\",null,{\"className\":\"text-sm text-gray-400 lg:max-w-[60%] mr-16 mt-1 lg:mt-0\",\"children\":\"Fusion Lab is an experimental application, so please be aware that there may be some imperfections as we continue to improve the application.\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col sm:flex-row gap-8 sm:gap-20 mt-10 md:mt-8 lg:mt-0\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"h6\",null,{\"className\":\"font-semibold\",\"children\":\"Solutions\"}],[\"$\",\"ul\",null,{\"className\":\"text-sm space-y-[10px]\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"https://app.diffusion.studio\",\"children\":\"Web-Client\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"https://github.com/diffusionstudio/core\",\"target\":\"_blank\",\"children\":\"Programmatic Editing\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"https://ffmpeg-js-preview.vercel.app/\",\"target\":\"_blank\",\"children\":\"Web Converter\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"h6\",null,{\"className\":\"font-semibold\",\"children\":\"Resources\"}],[\"$\",\"ul\",null,{\"className\":\"text-sm space-y-[10px]\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/pricing\",\"children\":\"Pricing\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/imprint\",\"children\":\"Imprint\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/privacy\",\"children\":\"Privacy Policy\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/tos\",\"children\":\"Terms of Service\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"h6\",null,{\"className\":\"font-semibold\",\"children\":\"Social\"}],[\"$\",\"ul\",null,{\"className\":\"text-sm space-y-[10px]\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"target\":\"_blank\",\"href\":\"https://www.tiktok.com/@diffusion.studio\",\"children\":\"Tiktok\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"target\":\"_blank\",\"href\":\"https://www.youtube.com/@DiffusionStudio4k\",\"children\":\"Youtube\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"target\":\"_blank\",\"href\":\"https://discord.gg/zPQJrNGuFB\",\"children\":\"Discord\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"target\":\"_blank\",\"href\":\"https://github.com/diffusion-studio\",\"children\":\"Github\"}]}]]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"md:flex md:items-center md:justify-between border-t border-gray-800 pt-6 sm:pt-8\",\"children\":[[\"$\",\"ul\",null,{\"className\":\"flex gap-3 mb-4 md:order-1 md:ml-4 md:mb-0\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"className\":\"flex justify-center items-center\",\"href\":\"https://github.com/diffusion-studio\",\"aria-label\":\"Github\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"width\":\"20\",\"height\":\"20\",\"viewBox\":\"0 0 20 20\",\"fill\":\"none\",\"children\":[\"$\",\"path\",null,{\"fillRule\":\"evenodd\",\"clipRule\":\"evenodd\",\"d\":\"M9.97668 1.5791C5.6241 1.5791 2.10547 5.19752 2.10547 9.674C2.10547 13.2523 4.35998 16.2812 7.48758 17.3533C7.87862 17.4339 8.02185 17.1791 8.02185 16.9648C8.02185 16.7771 8.00896 16.1339 8.00896 15.4636C5.81938 15.9462 5.36342 14.4987 5.36342 14.4987C5.01154 13.5605 4.49016 13.3194 4.49016 13.3194C3.77351 12.8235 4.54236 12.8235 4.54236 12.8235C5.33732 12.8771 5.75445 13.6544 5.75445 13.6544C6.45805 14.8873 7.59183 14.539 8.04795 14.3245C8.11304 13.8018 8.32169 13.44 8.54322 13.239C6.79688 13.0513 4.9595 12.3544 4.9595 9.24505C4.9595 8.36052 5.27206 7.63683 5.76734 7.074C5.6892 6.87302 5.41546 6.04193 5.84564 4.92959C5.84564 4.92959 6.51025 4.71512 8.0088 5.76052C8.65038 5.58332 9.31203 5.49318 9.97668 5.49242C10.6413 5.49242 11.3188 5.58634 11.9444 5.76052C13.4431 4.71512 14.1077 4.92959 14.1077 4.92959C14.5379 6.04193 14.264 6.87302 14.1859 7.074C14.6942 7.63683 14.9939 8.36052 14.9939 9.24505C14.9939 12.3544 13.1565 13.0378 11.3971 13.239C11.6839 13.4936 11.9314 13.976 11.9314 14.74C11.9314 15.8255 11.9185 16.6967 11.9185 16.9646C11.9185 17.1791 12.0619 17.4339 12.4527 17.3534C15.5803 16.2811 17.8348 13.2523 17.8348 9.674C17.8477 5.19752 14.3162 1.5791 9.97668 1.5791Z\",\"fill\":\"#F4F4F5\"}]}]}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"className\":\"flex justify-center items-center\",\"href\":\"https://www.tiktok.com/@diffusion.studio\",\"aria-label\":\"TikTok\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"width\":\"20\",\"height\":\"20\",\"viewBox\":\"0 0 20 20\",\"fill\":\"none\",\"children\":[\"$\",\"path\",null,{\"d\":\"M16.1945 5.74831C15.3924 5.57743 14.6661 5.15587 14.1214 4.54507C13.5768 3.93427 13.2423 3.16618 13.1666 2.35275V2H10.3998V12.9362C10.3981 13.4203 10.2441 13.8918 9.95952 14.2843C9.67491 14.6768 9.27396 14.9706 8.81304 15.1244C8.35211 15.2783 7.85437 15.2844 7.38976 15.142C6.92515 14.9996 6.51702 14.7157 6.22273 14.3304C5.92387 13.9386 5.75808 13.4621 5.74941 12.9702C5.74074 12.4782 5.88964 11.9963 6.17451 11.5943C6.45938 11.1923 6.86542 10.8911 7.33374 10.7344C7.80207 10.5777 8.30832 10.5737 8.77911 10.7229V7.92322C7.72929 7.77868 6.66037 7.96457 5.72185 8.45489C4.78333 8.94521 4.02217 9.71543 3.54481 10.6578C3.06746 11.6002 2.8978 12.6676 3.05956 13.7108C3.22133 14.7539 3.70642 15.7207 4.44699 16.4757C5.15324 17.1954 6.0588 17.6892 7.04807 17.894C8.03735 18.0988 9.06547 18.0054 10.0012 17.6257C10.9369 17.2459 11.7378 16.5971 12.3016 15.7619C12.8654 14.9268 13.1666 13.9433 13.1666 12.937V7.3489C14.2848 8.14507 15.6255 8.57197 17 8.56954V5.8315C16.7293 5.83183 16.4593 5.80395 16.1945 5.74831Z\",\"fill\":\"#F4F4F5\"}]}]}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"className\":\"flex justify-center items-center\",\"href\":\"https://www.youtube.com/@DiffusionStudio4k\",\"aria-label\":\"Youtube\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"width\":\"20\",\"height\":\"20\",\"viewBox\":\"0 0 20 20\",\"fill\":\"none\",\"children\":[\"$\",\"path\",null,{\"d\":\"M17.9944 6.00283C17.8995 5.65067 17.714 5.3295 17.4564 5.0713C17.1988 4.81311 16.8781 4.62688 16.5261 4.53117C15.2211 4.17283 10.0003 4.167 10.0003 4.167C10.0003 4.167 4.78027 4.16117 3.47444 4.50367C3.12271 4.60379 2.80263 4.79265 2.54491 5.05211C2.2872 5.31157 2.10051 5.63293 2.00277 5.98533C1.65861 7.29033 1.65527 9.997 1.65527 9.997C1.65527 9.997 1.65194 12.717 1.99361 14.0087C2.18527 14.7228 2.74777 15.287 3.46277 15.4795C4.78111 15.8378 9.98777 15.8437 9.98777 15.8437C9.98777 15.8437 15.2086 15.8495 16.5136 15.5078C16.8657 15.4123 17.1867 15.2265 17.445 14.9688C17.7032 14.7111 17.8898 14.3905 17.9861 14.0387C18.3311 12.7345 18.3336 10.0287 18.3336 10.0287C18.3336 10.0287 18.3503 7.30783 17.9944 6.00283ZM8.33027 12.5045L8.33444 7.5045L12.6736 10.0087L8.33027 12.5045Z\",\"fill\":\"#F4F4F5\"}]}]}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"className\":\"flex justify-center items-center\",\"href\":\"https://discord.gg/zPQJrNGuFB\",\"aria-label\":\"Discord\",\"target\":\"_blank\",\"children\":[\"$\",\"svg\",null,{\"width\":\"20\",\"height\":\"20\",\"viewBox\":\"0 0 20 20\",\"fill\":\"none\",\"children\":[\"$\",\"path\",null,{\"d\":\"M15.9006 4.58873C14.7837 4.07279 13.6046 3.70676 12.3934 3.5C12.2276 3.79895 12.0777 4.10652 11.9441 4.42144C10.654 4.22528 9.34196 4.22528 8.05181 4.42144C7.91817 4.10655 7.76821 3.79898 7.60254 3.5C6.39057 3.70851 5.21068 4.0754 4.09264 4.59143C1.87304 7.90484 1.27134 11.1359 1.57219 14.3212C2.87204 15.2902 4.32695 16.0271 5.87366 16.5C6.22193 16.0274 6.53011 15.526 6.79493 15.0011C6.29195 14.8116 5.80649 14.5778 5.34417 14.3023C5.46584 14.2133 5.58485 14.1215 5.69984 14.0325C7.0451 14.6708 8.51338 15.0018 9.99997 15.0018C11.4866 15.0018 12.9548 14.6708 14.3001 14.0325C14.4164 14.1283 14.5354 14.22 14.6558 14.3023C14.1926 14.5782 13.7062 14.8125 13.2023 15.0025C13.4668 15.5271 13.775 16.0281 14.1236 16.5C15.6716 16.029 17.1277 15.2924 18.4277 14.3225C18.7807 10.6287 17.8247 7.42725 15.9006 4.58873ZM7.176 12.3623C6.33764 12.3623 5.64502 11.5946 5.64502 10.6503C5.64502 9.70589 6.31357 8.93151 7.17333 8.93151C8.03309 8.93151 8.72036 9.70589 8.70565 10.6503C8.69094 11.5946 8.03041 12.3623 7.176 12.3623ZM12.8239 12.3623C11.9842 12.3623 11.2943 11.5946 11.2943 10.6503C11.2943 9.70589 11.9628 8.93151 12.8239 8.93151C13.685 8.93151 14.367 9.70589 14.3522 10.6503C14.3375 11.5946 13.6783 12.3623 12.8239 12.3623Z\",\"fill\":\"#F4F4F5\"}]}]}]}]]}],[\"$\",\"div\",null,{\"className\":\"text-sm\",\"children\":\"© 2024 Fusion Lab. All rights reserved.\"}]]}]]}]}]]}],null],\"segment\":\"(default)\"},\"styles\":[]}],[\"$\",\"$L7\",null,{}]]}],[\"$\",\"$L8\",null,{\"defer\":true,\"src\":\"https://umami.diffusion.studio/script.js\",\"data-website-id\":\"518d88f7-2753-4ece-bcff-a795016e114a\"}]]}],null]}]]\n"])</script>
+
+<script>self.__next_f.push([1, "5:[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[\"$\",\"title\",null,{\"children\":\"Fusion Lab - The generative AI Text-To-Video Editor\"}],[\"$\",\"meta\",null,{\"name\":\"description\",\"content\":\"Fusion Lab: Unlock the Power of AI with our Cutting-Edge Text-To-Video Editor! Create Stunning Videos from Text Automatically. No Video Editing Skills Required. Try Our Generative AI Editor Now for Professional-Quality Videos!\"}],null,null,null,null,null,null,null,null,[\"$\",\"meta\",null,{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],null,null,null,null,null,null,null,null,null,null,[]],[null,null,null,null],null,null,[null,null,null,null,null],null,null,null,null,null]\n"])</script>

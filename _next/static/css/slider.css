@@ -1,0 +1,15 @@
+.videoplayer {
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid red; */
+    max-width: 700px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
+#logo{
+    height: 50px;
+    width:50px;
+
+}
