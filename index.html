@@ -21,7 +21,7 @@
     <script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" noModule=""></script>
 </head>
 
-<body class="min-h-screen bg-background font-sans antialiased __variable_cc7fef">
+<body class="min-h-screen bg-background font-sans antialiased __variable_cc7fef" bgcolor="white">
     <div class="flex flex-col min-h-screen overflow-hidden">
         <header class="w-full safearea absolute inset-x-0 top-6 hidden md:flex justify-center z-50">
             <div class="w-full flex justify-between items-center flex-row max-w-6xl"><a
@@ -113,7 +113,8 @@
                         class="w-full aspect-video bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#6B6B6B]/20 to-[#E0E0E0]/0 from-10% to-60%">
                     </div>
                 </div>
-                <div class="safearea w-full flex-col flex pt-44 pb-24 items-center"><a
+                <div class="safearea w-full flex-col flex pt-44 pb-24 items-center">
+                    <!-- <a
                         class="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
                         target="_blank" href="https://github.com/diffusionstudio/core"><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -128,17 +129,17 @@
                             <path
                                 d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
                                 fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg></a>
+                        </svg></a> -->
                     <h1
                         class="mt-6 text-5xl sm:text-7xl max-w-sm sm:max-w-3xl font-semibold text-center tracking-tight inline-block text-foreground">
-                        Automate your video editing workflows</h1><span
+                        Automate your video generation process</h1><span
                         class="mt-4 text-center text-lg sm:text-xl text-gray-300 max-w-md sm:max-w-lg">The most
-                        efficient way to create, edit and manage short-form content at scale.</span>
+                        efficient way to create short-form content at scale.</span>
                     <div class="flex flex-row gap-4 mt-9 z-40"><button
                             class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-5"
                             id="start-editing" data-umami-event="Start editing" type="button" aria-haspopup="dialog"
                             aria-expanded="false" aria-controls="radix-:R34bd6pba:" data-state="closed">
-                            <a href="http://3.109.186.202:8000"> Start editing</a>
+                            <a href="http://3.109.186.202:8000"> Start generating</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 ml-2">
@@ -148,7 +149,7 @@
                         <div class="relative">
                             <div
                                 class="absolute -z-10 -inset-12 -rotate-[25deg] rounded-full bg-zinc-500 blur-[60px] opacity-10">
-                            </div><a
+                            <!-- </div><a
                                 class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-5 z-10"
                                 id="watch-demo" data-umami-event="Watch demo" target="_blank"
                                 href="https://www.youtube.com/watch?v=MThspMqs4ew&amp;list=PLdm699WiVGK-xLmH8-OQCkLZLVGvbODTF&amp;index=1">Watch
@@ -157,7 +158,7 @@
                                     <path
                                         d="M4.76447 3.12199C5.63151 3.04859 6.56082 3 7.5 3C8.43918 3 9.36849 3.04859 10.2355 3.12199C11.2796 3.21037 11.9553 3.27008 12.472 3.39203C12.9425 3.50304 13.2048 3.64976 13.4306 3.88086C13.4553 3.90618 13.4902 3.94414 13.5133 3.97092C13.7126 4.20149 13.8435 4.4887 13.918 5.03283C13.9978 5.6156 14 6.37644 14 7.52493C14 8.66026 13.9978 9.41019 13.9181 9.98538C13.8439 10.5206 13.7137 10.8061 13.5125 11.0387C13.4896 11.0651 13.4541 11.1038 13.4296 11.1287C13.2009 11.3625 12.9406 11.5076 12.4818 11.6164C11.9752 11.7365 11.3143 11.7942 10.2878 11.8797C9.41948 11.9521 8.47566 12 7.5 12C6.52434 12 5.58052 11.9521 4.7122 11.8797C3.68572 11.7942 3.02477 11.7365 2.51816 11.6164C2.05936 11.5076 1.7991 11.3625 1.57037 11.1287C1.54593 11.1038 1.51035 11.0651 1.48748 11.0387C1.28628 10.8061 1.15612 10.5206 1.08193 9.98538C1.00221 9.41019 1 8.66026 1 7.52493C1 6.37644 1.00216 5.6156 1.082 5.03283C1.15654 4.4887 1.28744 4.20149 1.48666 3.97092C1.5098 3.94414 1.54468 3.90618 1.56942 3.88086C1.7952 3.64976 2.05752 3.50304 2.52796 3.39203C3.04473 3.27008 3.7204 3.21037 4.76447 3.12199ZM0 7.52493C0 5.28296 0 4.16198 0.729985 3.31713C0.766457 3.27491 0.815139 3.22194 0.854123 3.18204C1.63439 2.38339 2.64963 2.29744 4.68012 2.12555C5.56923 2.05028 6.52724 2 7.5 2C8.47276 2 9.43077 2.05028 10.3199 2.12555C12.3504 2.29744 13.3656 2.38339 14.1459 3.18204C14.1849 3.22194 14.2335 3.27491 14.27 3.31713C15 4.16198 15 5.28296 15 7.52493C15 9.74012 15 10.8477 14.2688 11.6929C14.2326 11.7348 14.1832 11.7885 14.1444 11.8281C13.3629 12.6269 12.3655 12.71 10.3709 12.8763C9.47971 12.9505 8.50782 13 7.5 13C6.49218 13 5.52028 12.9505 4.62915 12.8763C2.63446 12.71 1.63712 12.6269 0.855558 11.8281C0.816844 11.7885 0.767442 11.7348 0.731221 11.6929C0 10.8477 0 9.74012 0 7.52493ZM5.25 5.38264C5.25 5.20225 5.43522 5.08124 5.60041 5.15369L10.428 7.27105C10.6274 7.35853 10.6274 7.64147 10.428 7.72895L5.60041 9.84631C5.43522 9.91876 5.25 9.79775 5.25 9.61736V5.38264Z"
                                         fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                </svg></a>
+                                </svg></a> -->
                         </div>
                     </div>
                 </div>
@@ -173,7 +174,7 @@
                 <h4 class="section-title-margin text-center text-lg sm:text-2xl font-semibold">Our users get billions of
                     views with Fusion Lab</h4><span class="sm:text-xl text-gray-300 mt-1 sm:mt-2">Results
                     from<!-- --> <a class="font-semibold text-blue-500" target="_blank"
-                        href="https://www.instagram.com/_om_kokate/">@_om_kokate</a></span>
+                        href="https://www.instagram.com/_fusion__lab">@_fusion__lab</a></span>
                 <!-- <div
                     class="w-full max-w-3xl grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 mt-10 gap-2 sm:gap-3 relative">
 
@@ -381,10 +382,10 @@
                 <div class="container relative flex items-center flex-col">
                     <h2 class="text-4xl sm:text-6xl font-semibold text-center tracking-tighter max-w-2xl"><em
                             class="text-gray-400 not-italic">Viral edits.</em><br />Completely automated</h2>
-                    <span class="text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6">Thanks
+                    <!-- <span class="text-center sm:text-xl text-gray-300 max-w-[80%] sm:max-w-[460px] mt-6">Thanks
                         to the
-                        latest state-of-the-art machine learning models, you can have algorithms do the work for
-                        you</span>
+                        latest state-of-the-art algorithm, you can have algorithms do the work for
+                        you</span> -->
                 </div>
                 <div class="section-title-margin max-w-5xl w-full gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                     <div
@@ -430,7 +431,7 @@
                             language model.
                         </p>
                     </div>
-                    <div
+                    <!-- <div
                         class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <path
@@ -445,8 +446,8 @@
                         </svg><span class="font-semibold mt-4 md:mt-5">Project Workflows</span>
                         <p class="mt-1 text-gray-400">Supercharge your edits with ready-to-use dedicated
                             workflows.</p>
-                    </div>
-                    <div
+                    </div> -->
+                    <!-- <div
                         class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <path d="M30.6673 8L18.0007 20.6667L11.334 14L1.33398 24" stroke="#A1A1AA" stroke-width="2"
@@ -457,8 +458,8 @@
                         <p class="mt-1 text-gray-400">Integrate the latest viral captions themes with a single
                             click.
                         </p>
-                    </div>
-                    <div
+                    </div> -->
+                    <!-- <div
                         class="bg-gray-900 border border-gray-800 rounded-2xl py-6 pl-6 pr-3 lg:py-8 lg:pl-8 lg:pr-4 flex flex-col">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <path d="M5.33301 12H26.6663" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
@@ -472,7 +473,7 @@
                         </svg><span class="font-semibold mt-4 md:mt-5">Automated Hashtags</span>
                         <p class="mt-1 text-gray-400">Spend no more time on hashtag optimization, we got your
                             back.</p>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -620,9 +621,9 @@
                         <div class="flex flex-col gap-4">
                             <h6 class="font-semibold">Social</h6>
                             <ul class="text-sm space-y-[10px]">
-                                <li><a target="_blank" href="https://www.tiktok.com/@diffusion.studio">Instagram</a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/_fusion__lab">Instagram</a></li>
                                 </li>
-                                <li><a target="_blank" href="https://github.com/diffusion-studio">Github</a></li>
+                                <li><a target="_blank" href="https://github.com/omkokate2902/Reddit-Bot">Github</a></li>
                             </ul>
                         </div>
                     </div>
@@ -630,33 +631,33 @@
                 <div class="md:flex md:items-center md:justify-between border-t border-gray-800 pt-6 sm:pt-8">
                     <ul class="flex gap-3 mb-4 md:order-1 md:ml-4 md:mb-0">
                         <li><a class="flex justify-center items-center" aria-label="Github" target="_blank"
-                                href="https://github.com/diffusion-studio"><svg width="20" height="20"
+                                href="https://github.com/omkokate2902/Reddit-Bot"><svg width="20" height="20"
                                     viewBox="0 0 20 20" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M9.97668 1.5791C5.6241 1.5791 2.10547 5.19752 2.10547 9.674C2.10547 13.2523 4.35998 16.2812 7.48758 17.3533C7.87862 17.4339 8.02185 17.1791 8.02185 16.9648C8.02185 16.7771 8.00896 16.1339 8.00896 15.4636C5.81938 15.9462 5.36342 14.4987 5.36342 14.4987C5.01154 13.5605 4.49016 13.3194 4.49016 13.3194C3.77351 12.8235 4.54236 12.8235 4.54236 12.8235C5.33732 12.8771 5.75445 13.6544 5.75445 13.6544C6.45805 14.8873 7.59183 14.539 8.04795 14.3245C8.11304 13.8018 8.32169 13.44 8.54322 13.239C6.79688 13.0513 4.9595 12.3544 4.9595 9.24505C4.9595 8.36052 5.27206 7.63683 5.76734 7.074C5.6892 6.87302 5.41546 6.04193 5.84564 4.92959C5.84564 4.92959 6.51025 4.71512 8.0088 5.76052C8.65038 5.58332 9.31203 5.49318 9.97668 5.49242C10.6413 5.49242 11.3188 5.58634 11.9444 5.76052C13.4431 4.71512 14.1077 4.92959 14.1077 4.92959C14.5379 6.04193 14.264 6.87302 14.1859 7.074C14.6942 7.63683 14.9939 8.36052 14.9939 9.24505C14.9939 12.3544 13.1565 13.0378 11.3971 13.239C11.6839 13.4936 11.9314 13.976 11.9314 14.74C11.9314 15.8255 11.9185 16.6967 11.9185 16.9646C11.9185 17.1791 12.0619 17.4339 12.4527 17.3534C15.5803 16.2811 17.8348 13.2523 17.8348 9.674C17.8477 5.19752 14.3162 1.5791 9.97668 1.5791Z"
                                         fill="#F4F4F5"></path>
                                 </svg></a></li>
-                        <li><a class="flex justify-center items-center" aria-label="TikTok" target="_blank"
-                                href="https://www.tiktok.com/@diffusion.studio"><svg width="20" height="20"
+                        <li><a class="flex justify-center items-center" aria-label="Instagram" target="_blank"
+                                href="https://www.instagram.com/_fusion__lab"><svg width="20" height="20"
                                     viewBox="0 0 20 20" fill="none">
                                     <path
                                         d="M16.1945 5.74831C15.3924 5.57743 14.6661 5.15587 14.1214 4.54507C13.5768 3.93427 13.2423 3.16618 13.1666 2.35275V2H10.3998V12.9362C10.3981 13.4203 10.2441 13.8918 9.95952 14.2843C9.67491 14.6768 9.27396 14.9706 8.81304 15.1244C8.35211 15.2783 7.85437 15.2844 7.38976 15.142C6.92515 14.9996 6.51702 14.7157 6.22273 14.3304C5.92387 13.9386 5.75808 13.4621 5.74941 12.9702C5.74074 12.4782 5.88964 11.9963 6.17451 11.5943C6.45938 11.1923 6.86542 10.8911 7.33374 10.7344C7.80207 10.5777 8.30832 10.5737 8.77911 10.7229V7.92322C7.72929 7.77868 6.66037 7.96457 5.72185 8.45489C4.78333 8.94521 4.02217 9.71543 3.54481 10.6578C3.06746 11.6002 2.8978 12.6676 3.05956 13.7108C3.22133 14.7539 3.70642 15.7207 4.44699 16.4757C5.15324 17.1954 6.0588 17.6892 7.04807 17.894C8.03735 18.0988 9.06547 18.0054 10.0012 17.6257C10.9369 17.2459 11.7378 16.5971 12.3016 15.7619C12.8654 14.9268 13.1666 13.9433 13.1666 12.937V7.3489C14.2848 8.14507 15.6255 8.57197 17 8.56954V5.8315C16.7293 5.83183 16.4593 5.80395 16.1945 5.74831Z"
                                         fill="#F4F4F5"></path>
                                 </svg></a></li>
-                        <li><a class="flex justify-center items-center" aria-label="Youtube" target="_blank"
+                        <!-- <li><a class="flex justify-center items-center" aria-label="Youtube" target="_blank"
                                 href="https://www.youtube.com/@DiffusionStudio4k"><svg width="20" height="20"
                                     viewBox="0 0 20 20" fill="none">
                                     <path
                                         d="M17.9944 6.00283C17.8995 5.65067 17.714 5.3295 17.4564 5.0713C17.1988 4.81311 16.8781 4.62688 16.5261 4.53117C15.2211 4.17283 10.0003 4.167 10.0003 4.167C10.0003 4.167 4.78027 4.16117 3.47444 4.50367C3.12271 4.60379 2.80263 4.79265 2.54491 5.05211C2.2872 5.31157 2.10051 5.63293 2.00277 5.98533C1.65861 7.29033 1.65527 9.997 1.65527 9.997C1.65527 9.997 1.65194 12.717 1.99361 14.0087C2.18527 14.7228 2.74777 15.287 3.46277 15.4795C4.78111 15.8378 9.98777 15.8437 9.98777 15.8437C9.98777 15.8437 15.2086 15.8495 16.5136 15.5078C16.8657 15.4123 17.1867 15.2265 17.445 14.9688C17.7032 14.7111 17.8898 14.3905 17.9861 14.0387C18.3311 12.7345 18.3336 10.0287 18.3336 10.0287C18.3336 10.0287 18.3503 7.30783 17.9944 6.00283ZM8.33027 12.5045L8.33444 7.5045L12.6736 10.0087L8.33027 12.5045Z"
                                         fill="#F4F4F5"></path>
-                                </svg></a></li>
-                        <li><a class="flex justify-center items-center" aria-label="Discord" target="_blank"
+                                </svg></a></li> -->
+                        <!-- <li><a class="flex justify-center items-center" aria-label="Discord" target="_blank"
                                 href="https://discord.gg/zPQJrNGuFB"><svg width="20" height="20" viewBox="0 0 20 20"
                                     fill="none">
                                     <path
                                         d="M15.9006 4.58873C14.7837 4.07279 13.6046 3.70676 12.3934 3.5C12.2276 3.79895 12.0777 4.10652 11.9441 4.42144C10.654 4.22528 9.34196 4.22528 8.05181 4.42144C7.91817 4.10655 7.76821 3.79898 7.60254 3.5C6.39057 3.70851 5.21068 4.0754 4.09264 4.59143C1.87304 7.90484 1.27134 11.1359 1.57219 14.3212C2.87204 15.2902 4.32695 16.0271 5.87366 16.5C6.22193 16.0274 6.53011 15.526 6.79493 15.0011C6.29195 14.8116 5.80649 14.5778 5.34417 14.3023C5.46584 14.2133 5.58485 14.1215 5.69984 14.0325C7.0451 14.6708 8.51338 15.0018 9.99997 15.0018C11.4866 15.0018 12.9548 14.6708 14.3001 14.0325C14.4164 14.1283 14.5354 14.22 14.6558 14.3023C14.1926 14.5782 13.7062 14.8125 13.2023 15.0025C13.4668 15.5271 13.775 16.0281 14.1236 16.5C15.6716 16.029 17.1277 15.2924 18.4277 14.3225C18.7807 10.6287 17.8247 7.42725 15.9006 4.58873ZM7.176 12.3623C6.33764 12.3623 5.64502 11.5946 5.64502 10.6503C5.64502 9.70589 6.31357 8.93151 7.17333 8.93151C8.03309 8.93151 8.72036 9.70589 8.70565 10.6503C8.69094 11.5946 8.03041 12.3623 7.176 12.3623ZM12.8239 12.3623C11.9842 12.3623 11.2943 11.5946 11.2943 10.6503C11.2943 9.70589 11.9628 8.93151 12.8239 8.93151C13.685 8.93151 14.367 9.70589 14.3522 10.6503C14.3375 11.5946 13.6783 12.3623 12.8239 12.3623Z"
                                         fill="#F4F4F5"></path>
-                                </svg></a></li>
+                                </svg></a></li> -->
                     </ul>
                     <div class="text-sm">© 2024 Fusion Lab. All rights reserved.</div>
                 </div>
